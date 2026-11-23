@@ -122,6 +122,11 @@ There are five repetitions of each strategy, routing policy, and fault case:
 90 final trials. Their order is shuffled within each repetition. All 90
 converged, and all 8,370 committed results matched their event prefixes.
 
+The [repository](https://github.com/vibeets2108/counter-ownership-study) includes
+the source, configuration, raw observations, saved databases, and reproduction
+instructions. The recorded results are available for inspection, not just
+the summary numbers below.
+
 ## What the numbers mean
 
 An event read means a row returned to aggregation code. Repeated and abandoned
