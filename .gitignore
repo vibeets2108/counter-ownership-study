@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.sqlite-wal
+*.sqlite-shm
+smoke-results/
+measured-results/
+final-results/
+evidence/
+observer-smoke/
+observer-smoke-verified/
+reproduction/
+quick-check/
+*.zip
+/study.json

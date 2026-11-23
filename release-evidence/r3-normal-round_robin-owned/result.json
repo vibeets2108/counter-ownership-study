@@ -1,0 +1,114 @@
+{
+  "strategy": "owned",
+  "routing": "round_robin",
+  "scenario": "normal",
+  "settings": {
+    "counters": 8,
+    "batches": 60,
+    "batch_size": 8,
+    "batch_ms": 20,
+    "rollup_ms": 40,
+    "reconcile_ms": 40,
+    "lease_ms": 250,
+    "renew_ms": 50,
+    "fault_after_events": 160,
+    "pause_ms": 600,
+    "observe_ms": 5,
+    "settle_ms": 1200,
+    "seed": 42
+  },
+  "worker_pids": [
+    63700,
+    22164
+  ],
+  "observer_pid": 59804,
+  "worker_exits": [
+    0,
+    0
+  ],
+  "accepted_events": 480,
+  "input_span_ms": 1169.7282,
+  "metrics": {
+    "renewal_transactions": 92,
+    "renewed_rows": 346,
+    "lease_reads": 103,
+    "lease_grant_transactions": 8,
+    "lease_grants": 8,
+    "snapshot_transactions": 97,
+    "write_attempts": 95,
+    "fence_checks": 95,
+    "regressions": 0,
+    "writes": 95,
+    "commit_path_ns": 120883000,
+    "ingest_transactions": 60,
+    "route_lease_queries": 89,
+    "reminders": 224,
+    "reconciliation_queries": 59,
+    "event_reads": 480,
+    "repeated_event_reads": 0,
+    "stable_visibility_p50_ms": 25.5493,
+    "stable_visibility_p95_ms": 50.8318,
+    "stable_visibility_max_ms": 65.5842,
+    "oldest_missing_max_ms": 59.8727,
+    "observer_max_gap_ms": 164.9893
+  },
+  "final": [
+    [
+      0,
+      384,
+      480,
+      480,
+      384
+    ],
+    [
+      1,
+      17,
+      443,
+      443,
+      17
+    ],
+    [
+      2,
+      17,
+      433,
+      433,
+      17
+    ],
+    [
+      3,
+      16,
+      464,
+      464,
+      16
+    ],
+    [
+      4,
+      13,
+      463,
+      463,
+      13
+    ],
+    [
+      5,
+      8,
+      417,
+      417,
+      8
+    ],
+    [
+      6,
+      10,
+      465,
+      465,
+      10
+    ],
+    [
+      7,
+      15,
+      458,
+      458,
+      15
+    ]
+  ],
+  "correctness": "All committed prefixes match event log; final totals converge"
+}

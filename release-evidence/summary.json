@@ -1,0 +1,1883 @@
+{
+  "runs": 90,
+  "groups": [
+    {
+      "scenario": "crash",
+      "routing": "round_robin",
+      "strategy": "guarded",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 493,
+          "min": 492,
+          "max": 499
+        },
+        "repeated_event_reads": {
+          "median": 13,
+          "min": 12,
+          "max": 19
+        },
+        "stable_visibility_p95_ms": {
+          "median": 54.5935,
+          "min": 48.4071,
+          "max": 58.0772
+        },
+        "stable_visibility_max_ms": {
+          "median": 77.9803,
+          "min": 56.0433,
+          "max": 80.6313
+        },
+        "oldest_missing_max_ms": {
+          "median": 72.6533,
+          "min": 50.67,
+          "max": 75.2493
+        },
+        "observer_max_gap_ms": {
+          "median": 178.8782,
+          "min": 161.5435,
+          "max": 183.2984
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 115,
+          "min": 112,
+          "max": 117
+        },
+        "writes": {
+          "median": 101,
+          "min": 98,
+          "max": 104
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 101,
+          "min": 98,
+          "max": 104
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "crash",
+      "routing": "round_robin",
+      "strategy": "overlap",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 498,
+          "min": 493,
+          "max": 514
+        },
+        "repeated_event_reads": {
+          "median": 18,
+          "min": 13,
+          "max": 34
+        },
+        "stable_visibility_p95_ms": {
+          "median": 49.8478,
+          "min": 46.0899,
+          "max": 51.8235
+        },
+        "stable_visibility_max_ms": {
+          "median": 89.5861,
+          "min": 73.3183,
+          "max": 131.4271
+        },
+        "oldest_missing_max_ms": {
+          "median": 84.4067,
+          "min": 67.7973,
+          "max": 126.0311
+        },
+        "observer_max_gap_ms": {
+          "median": 175.9784,
+          "min": 164.2015,
+          "max": 180.9957
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 114,
+          "min": 108,
+          "max": 115
+        },
+        "writes": {
+          "median": 96,
+          "min": 94,
+          "max": 99
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "crash",
+      "routing": "round_robin",
+      "strategy": "owned",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 494,
+          "min": 492,
+          "max": 499
+        },
+        "repeated_event_reads": {
+          "median": 14,
+          "min": 12,
+          "max": 19
+        },
+        "stable_visibility_p95_ms": {
+          "median": 228.8235,
+          "min": 186.4092,
+          "max": 256.2169
+        },
+        "stable_visibility_max_ms": {
+          "median": 288.8057,
+          "min": 256.1229,
+          "max": 337.9258
+        },
+        "oldest_missing_max_ms": {
+          "median": 283.4275,
+          "min": 250.7662,
+          "max": 332.7661
+        },
+        "observer_max_gap_ms": {
+          "median": 171.2589,
+          "min": 163.8043,
+          "max": 174.5778
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 90,
+          "min": 87,
+          "max": 92
+        },
+        "writes": {
+          "median": 86,
+          "min": 82,
+          "max": 88
+        },
+        "lease_reads": {
+          "median": 94,
+          "min": 91,
+          "max": 96
+        },
+        "route_lease_queries": {
+          "median": 89,
+          "min": 86,
+          "max": 90
+        },
+        "lease_grant_transactions": {
+          "median": 12,
+          "min": 11,
+          "max": 13
+        },
+        "renewal_transactions": {
+          "median": 52,
+          "min": 51,
+          "max": 53
+        },
+        "renewed_rows": {
+          "median": 316,
+          "min": 302,
+          "max": 321
+        },
+        "fence_checks": {
+          "median": 86,
+          "min": 82,
+          "max": 88
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "crash",
+      "routing": "sticky",
+      "strategy": "guarded",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 494,
+          "min": 492,
+          "max": 499
+        },
+        "repeated_event_reads": {
+          "median": 14,
+          "min": 12,
+          "max": 19
+        },
+        "stable_visibility_p95_ms": {
+          "median": 58.9553,
+          "min": 49.4223,
+          "max": 67.9472
+        },
+        "stable_visibility_max_ms": {
+          "median": 100.3392,
+          "min": 67.7027,
+          "max": 126.8891
+        },
+        "oldest_missing_max_ms": {
+          "median": 94.9897,
+          "min": 62.3469,
+          "max": 121.5709
+        },
+        "observer_max_gap_ms": {
+          "median": 167.0555,
+          "min": 163.6561,
+          "max": 170.5179
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 99,
+          "min": 94,
+          "max": 103
+        },
+        "writes": {
+          "median": 93,
+          "min": 89,
+          "max": 99
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 93,
+          "min": 89,
+          "max": 99
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "crash",
+      "routing": "sticky",
+      "strategy": "overlap",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 494,
+          "min": 492,
+          "max": 499
+        },
+        "repeated_event_reads": {
+          "median": 14,
+          "min": 12,
+          "max": 19
+        },
+        "stable_visibility_p95_ms": {
+          "median": 57.1117,
+          "min": 50.6698,
+          "max": 60.3324
+        },
+        "stable_visibility_max_ms": {
+          "median": 72.8671,
+          "min": 67.204,
+          "max": 103.0356
+        },
+        "oldest_missing_max_ms": {
+          "median": 67.1984,
+          "min": 61.6722,
+          "max": 97.6221
+        },
+        "observer_max_gap_ms": {
+          "median": 165.2593,
+          "min": 160.7392,
+          "max": 173.0905
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 104,
+          "min": 99,
+          "max": 104
+        },
+        "writes": {
+          "median": 96,
+          "min": 93,
+          "max": 100
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "crash",
+      "routing": "sticky",
+      "strategy": "owned",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 494,
+          "min": 492,
+          "max": 494
+        },
+        "repeated_event_reads": {
+          "median": 14,
+          "min": 12,
+          "max": 14
+        },
+        "stable_visibility_p95_ms": {
+          "median": 224.0024,
+          "min": 216.8209,
+          "max": 241.2869
+        },
+        "stable_visibility_max_ms": {
+          "median": 275.9817,
+          "min": 275.7629,
+          "max": 305.8274
+        },
+        "oldest_missing_max_ms": {
+          "median": 270.6201,
+          "min": 270.2614,
+          "max": 300.2096
+        },
+        "observer_max_gap_ms": {
+          "median": 167.5521,
+          "min": 165.2807,
+          "max": 177.0884
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 94,
+          "min": 88,
+          "max": 97
+        },
+        "writes": {
+          "median": 86,
+          "min": 84,
+          "max": 92
+        },
+        "lease_reads": {
+          "median": 94,
+          "min": 88,
+          "max": 97
+        },
+        "route_lease_queries": {
+          "median": 89,
+          "min": 87,
+          "max": 89
+        },
+        "lease_grant_transactions": {
+          "median": 12,
+          "min": 12,
+          "max": 12
+        },
+        "renewal_transactions": {
+          "median": 52,
+          "min": 51,
+          "max": 53
+        },
+        "renewed_rows": {
+          "median": 315,
+          "min": 308,
+          "max": 319
+        },
+        "fence_checks": {
+          "median": 86,
+          "min": 84,
+          "max": 92
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "normal",
+      "routing": "round_robin",
+      "strategy": "guarded",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 494,
+          "min": 480,
+          "max": 506
+        },
+        "repeated_event_reads": {
+          "median": 14,
+          "min": 0,
+          "max": 26
+        },
+        "stable_visibility_p95_ms": {
+          "median": 45.1828,
+          "min": 42.3228,
+          "max": 50.5971
+        },
+        "stable_visibility_max_ms": {
+          "median": 63.1358,
+          "min": 53.9811,
+          "max": 72.2949
+        },
+        "oldest_missing_max_ms": {
+          "median": 57.3551,
+          "min": 48.6788,
+          "max": 67.0937
+        },
+        "observer_max_gap_ms": {
+          "median": 170.2884,
+          "min": 166.6794,
+          "max": 184.5991
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 137,
+          "min": 135,
+          "max": 149
+        },
+        "writes": {
+          "median": 107,
+          "min": 103,
+          "max": 114
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 108,
+          "min": 103,
+          "max": 115
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 1
+        }
+      }
+    },
+    {
+      "scenario": "normal",
+      "routing": "round_robin",
+      "strategy": "overlap",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 481,
+          "min": 480,
+          "max": 521
+        },
+        "repeated_event_reads": {
+          "median": 1,
+          "min": 0,
+          "max": 41
+        },
+        "stable_visibility_p95_ms": {
+          "median": 47.7807,
+          "min": 43.0378,
+          "max": 54.2309
+        },
+        "stable_visibility_max_ms": {
+          "median": 62.4791,
+          "min": 52.9356,
+          "max": 80.3314
+        },
+        "oldest_missing_max_ms": {
+          "median": 56.6603,
+          "min": 47.6268,
+          "max": 74.822
+        },
+        "observer_max_gap_ms": {
+          "median": 177.6263,
+          "min": 166.9205,
+          "max": 182.3012
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 2
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 139,
+          "min": 138,
+          "max": 146
+        },
+        "writes": {
+          "median": 108,
+          "min": 103,
+          "max": 112
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "normal",
+      "routing": "round_robin",
+      "strategy": "owned",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 480,
+          "min": 480,
+          "max": 480
+        },
+        "repeated_event_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "stable_visibility_p95_ms": {
+          "median": 58.0476,
+          "min": 50.2035,
+          "max": 61.2951
+        },
+        "stable_visibility_max_ms": {
+          "median": 68.1843,
+          "min": 65.5842,
+          "max": 73.0985
+        },
+        "oldest_missing_max_ms": {
+          "median": 62.6113,
+          "min": 59.8727,
+          "max": 67.9532
+        },
+        "observer_max_gap_ms": {
+          "median": 168.7422,
+          "min": 164.2625,
+          "max": 184.8891
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 99,
+          "min": 97,
+          "max": 105
+        },
+        "writes": {
+          "median": 95,
+          "min": 95,
+          "max": 98
+        },
+        "lease_reads": {
+          "median": 103,
+          "min": 101,
+          "max": 109
+        },
+        "route_lease_queries": {
+          "median": 90,
+          "min": 88,
+          "max": 91
+        },
+        "lease_grant_transactions": {
+          "median": 8,
+          "min": 8,
+          "max": 8
+        },
+        "renewal_transactions": {
+          "median": 90,
+          "min": 87,
+          "max": 92
+        },
+        "renewed_rows": {
+          "median": 338,
+          "min": 327,
+          "max": 346
+        },
+        "fence_checks": {
+          "median": 95,
+          "min": 95,
+          "max": 98
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "normal",
+      "routing": "sticky",
+      "strategy": "guarded",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 480,
+          "min": 480,
+          "max": 480
+        },
+        "repeated_event_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "stable_visibility_p95_ms": {
+          "median": 51.6907,
+          "min": 49.5792,
+          "max": 55.2363
+        },
+        "stable_visibility_max_ms": {
+          "median": 63.432,
+          "min": 54.8349,
+          "max": 69.4751
+        },
+        "oldest_missing_max_ms": {
+          "median": 57.906,
+          "min": 49.538,
+          "max": 64.2406
+        },
+        "observer_max_gap_ms": {
+          "median": 175.8762,
+          "min": 171.4015,
+          "max": 182.3696
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 100,
+          "min": 98,
+          "max": 101
+        },
+        "writes": {
+          "median": 97,
+          "min": 94,
+          "max": 99
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 58,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 97,
+          "min": 94,
+          "max": 99
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "normal",
+      "routing": "sticky",
+      "strategy": "overlap",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 480,
+          "min": 480,
+          "max": 480
+        },
+        "repeated_event_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "stable_visibility_p95_ms": {
+          "median": 53.4715,
+          "min": 50.3656,
+          "max": 57.6032
+        },
+        "stable_visibility_max_ms": {
+          "median": 70.9338,
+          "min": 54.6712,
+          "max": 72.1195
+        },
+        "oldest_missing_max_ms": {
+          "median": 65.382,
+          "min": 49.3162,
+          "max": 66.8014
+        },
+        "observer_max_gap_ms": {
+          "median": 177.4977,
+          "min": 168.3031,
+          "max": 178.4942
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 103,
+          "min": 101,
+          "max": 105
+        },
+        "writes": {
+          "median": 97,
+          "min": 96,
+          "max": 99
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "normal",
+      "routing": "sticky",
+      "strategy": "owned",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 480,
+          "min": 480,
+          "max": 480
+        },
+        "repeated_event_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "stable_visibility_p95_ms": {
+          "median": 55.805,
+          "min": 45.629,
+          "max": 67.2448
+        },
+        "stable_visibility_max_ms": {
+          "median": 68.5201,
+          "min": 57.6758,
+          "max": 73.2482
+        },
+        "oldest_missing_max_ms": {
+          "median": 62.7692,
+          "min": 52.1622,
+          "max": 68.0622
+        },
+        "observer_max_gap_ms": {
+          "median": 167.7823,
+          "min": 159.8982,
+          "max": 183.4124
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 103,
+          "min": 99,
+          "max": 106
+        },
+        "writes": {
+          "median": 98,
+          "min": 95,
+          "max": 101
+        },
+        "lease_reads": {
+          "median": 103,
+          "min": 99,
+          "max": 106
+        },
+        "route_lease_queries": {
+          "median": 90,
+          "min": 85,
+          "max": 90
+        },
+        "lease_grant_transactions": {
+          "median": 8,
+          "min": 8,
+          "max": 8
+        },
+        "renewal_transactions": {
+          "median": 90,
+          "min": 89,
+          "max": 91
+        },
+        "renewed_rows": {
+          "median": 340,
+          "min": 334,
+          "max": 343
+        },
+        "fence_checks": {
+          "median": 98,
+          "min": 95,
+          "max": 101
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 58,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "pause",
+      "routing": "round_robin",
+      "strategy": "guarded",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 493,
+          "min": 485,
+          "max": 499
+        },
+        "repeated_event_reads": {
+          "median": 13,
+          "min": 5,
+          "max": 19
+        },
+        "stable_visibility_p95_ms": {
+          "median": 82.385,
+          "min": 55.0179,
+          "max": 95.6271
+        },
+        "stable_visibility_max_ms": {
+          "median": 151.1727,
+          "min": 118.4878,
+          "max": 223.6238
+        },
+        "oldest_missing_max_ms": {
+          "median": 145.4217,
+          "min": 113.09,
+          "max": 218.0479
+        },
+        "observer_max_gap_ms": {
+          "median": 167.6057,
+          "min": 161.8371,
+          "max": 190.0012
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 118,
+          "min": 115,
+          "max": 120
+        },
+        "writes": {
+          "median": 95,
+          "min": 91,
+          "max": 95
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 96,
+          "min": 92,
+          "max": 96
+        },
+        "superseded_writes": {
+          "median": 1,
+          "min": 1,
+          "max": 1
+        }
+      }
+    },
+    {
+      "scenario": "pause",
+      "routing": "round_robin",
+      "strategy": "overlap",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 674,
+          "min": 662,
+          "max": 674
+        },
+        "repeated_event_reads": {
+          "median": 194,
+          "min": 182,
+          "max": 194
+        },
+        "stable_visibility_p95_ms": {
+          "median": 569.262,
+          "min": 538.4116,
+          "max": 577.405
+        },
+        "stable_visibility_max_ms": {
+          "median": 629.1557,
+          "min": 598.5741,
+          "max": 638.4728
+        },
+        "oldest_missing_max_ms": {
+          "median": 623.9978,
+          "min": 593.0491,
+          "max": 633.2224
+        },
+        "observer_max_gap_ms": {
+          "median": 168.4836,
+          "min": 161.1184,
+          "max": 183.1076
+        },
+        "regressions": {
+          "median": 1,
+          "min": 1,
+          "max": 1
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 116,
+          "min": 108,
+          "max": 121
+        },
+        "writes": {
+          "median": 98,
+          "min": 94,
+          "max": 102
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "pause",
+      "routing": "round_robin",
+      "strategy": "owned",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 492,
+          "min": 487,
+          "max": 494
+        },
+        "repeated_event_reads": {
+          "median": 12,
+          "min": 7,
+          "max": 14
+        },
+        "stable_visibility_p95_ms": {
+          "median": 202.9206,
+          "min": 190.9609,
+          "max": 227.9056
+        },
+        "stable_visibility_max_ms": {
+          "median": 262.6729,
+          "min": 249.9757,
+          "max": 287.7961
+        },
+        "oldest_missing_max_ms": {
+          "median": 257.0956,
+          "min": 244.6027,
+          "max": 282.523
+        },
+        "observer_max_gap_ms": {
+          "median": 178.6092,
+          "min": 170.869,
+          "max": 182.7509
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 1,
+          "min": 1,
+          "max": 1
+        },
+        "snapshot_transactions": {
+          "median": 93,
+          "min": 91,
+          "max": 94
+        },
+        "writes": {
+          "median": 88,
+          "min": 87,
+          "max": 89
+        },
+        "lease_reads": {
+          "median": 101,
+          "min": 99,
+          "max": 103
+        },
+        "route_lease_queries": {
+          "median": 88,
+          "min": 86,
+          "max": 90
+        },
+        "lease_grant_transactions": {
+          "median": 12,
+          "min": 12,
+          "max": 15
+        },
+        "renewal_transactions": {
+          "median": 80,
+          "min": 77,
+          "max": 81
+        },
+        "renewed_rows": {
+          "median": 316,
+          "min": 307,
+          "max": 324
+        },
+        "fence_checks": {
+          "median": 89,
+          "min": 88,
+          "max": 90
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "pause",
+      "routing": "sticky",
+      "strategy": "guarded",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 480,
+          "min": 480,
+          "max": 480
+        },
+        "repeated_event_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "stable_visibility_p95_ms": {
+          "median": 617.4378,
+          "min": 601.9727,
+          "max": 622.7684
+        },
+        "stable_visibility_max_ms": {
+          "median": 655.1949,
+          "min": 629.9578,
+          "max": 662.8578
+        },
+        "oldest_missing_max_ms": {
+          "median": 649.499,
+          "min": 624.398,
+          "max": 657.3533
+        },
+        "observer_max_gap_ms": {
+          "median": 170.5949,
+          "min": 163.0162,
+          "max": 185.843
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 73,
+          "min": 71,
+          "max": 75
+        },
+        "writes": {
+          "median": 71,
+          "min": 69,
+          "max": 72
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 71,
+          "min": 69,
+          "max": 72
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "pause",
+      "routing": "sticky",
+      "strategy": "overlap",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 480,
+          "min": 480,
+          "max": 480
+        },
+        "repeated_event_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "stable_visibility_p95_ms": {
+          "median": 614.4741,
+          "min": 609.5054,
+          "max": 622.6942
+        },
+        "stable_visibility_max_ms": {
+          "median": 643.6459,
+          "min": 633.5707,
+          "max": 646.4252
+        },
+        "oldest_missing_max_ms": {
+          "median": 638.2359,
+          "min": 628.1017,
+          "max": 641.123
+        },
+        "observer_max_gap_ms": {
+          "median": 179.7278,
+          "min": 161.2066,
+          "max": 182.6329
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "snapshot_transactions": {
+          "median": 73,
+          "min": 69,
+          "max": 75
+        },
+        "writes": {
+          "median": 71,
+          "min": 68,
+          "max": 73
+        },
+        "lease_reads": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "route_lease_queries": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "lease_grant_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewal_transactions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "renewed_rows": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "fence_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "scenario": "pause",
+      "routing": "sticky",
+      "strategy": "owned",
+      "runs": 5,
+      "metrics": {
+        "event_reads": {
+          "median": 494,
+          "min": 492,
+          "max": 499
+        },
+        "repeated_event_reads": {
+          "median": 14,
+          "min": 12,
+          "max": 19
+        },
+        "stable_visibility_p95_ms": {
+          "median": 249.6893,
+          "min": 199.5242,
+          "max": 259.858
+        },
+        "stable_visibility_max_ms": {
+          "median": 309.9668,
+          "min": 256.3577,
+          "max": 319.3934
+        },
+        "oldest_missing_max_ms": {
+          "median": 304.696,
+          "min": 250.701,
+          "max": 313.7955
+        },
+        "observer_max_gap_ms": {
+          "median": 168.2511,
+          "min": 160.0666,
+          "max": 179.2081
+        },
+        "regressions": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "rejected_writes": {
+          "median": 1,
+          "min": 1,
+          "max": 1
+        },
+        "snapshot_transactions": {
+          "median": 92,
+          "min": 91,
+          "max": 92
+        },
+        "writes": {
+          "median": 89,
+          "min": 87,
+          "max": 91
+        },
+        "lease_reads": {
+          "median": 95,
+          "min": 94,
+          "max": 96
+        },
+        "route_lease_queries": {
+          "median": 87,
+          "min": 86,
+          "max": 90
+        },
+        "lease_grant_transactions": {
+          "median": 12,
+          "min": 12,
+          "max": 12
+        },
+        "renewal_transactions": {
+          "median": 80,
+          "min": 77,
+          "max": 83
+        },
+        "renewed_rows": {
+          "median": 317,
+          "min": 316,
+          "max": 334
+        },
+        "fence_checks": {
+          "median": 90,
+          "min": 88,
+          "max": 92
+        },
+        "reconciliation_queries": {
+          "median": 59,
+          "min": 59,
+          "max": 59
+        },
+        "progress_checks": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "superseded_writes": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    }
+  ],
+  "verified_committed_prefixes": 8370,
+  "identical_workload_sha256": "0520d83ab540e8f33cd3f61b14ba7daa577886b6278aa3659b70500a864e8383",
+  "fault_since_first_ack_ms": {
+    "min": 374.5107,
+    "max": 656.0979
+  },
+  "active_polling_gap_ms": {
+    "median": 5.4842,
+    "max": 8.4629
+  },
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "sqlite": "3.49.1",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "logical_cpus": 16,
+    "start_method": "spawn",
+    "journal_mode": "WAL",
+    "synchronous": "FULL",
+    "clock": "perf_counter_ns; shared high-resolution clock across Windows processes",
+    "observer": "Separate spawned read-only sampling process",
+    "scope": "Local shared SQLite, not a distributed database or throughput benchmark",
+    "script_sha256": "976e745bf710429d2fdeadb06b617b135333ffd4e6ff9a1b737c6f64b0377e9d"
+  },
+  "aggregation": "Each cell is median/min/max across independent runs in its group, not pooled percentiles"
+}

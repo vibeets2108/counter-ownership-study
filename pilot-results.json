@@ -1,0 +1,2207 @@
+{
+  "kind": "Deterministic model; supplied durations are not benchmark results",
+  "runs": [
+    {
+      "strategy": "overlap",
+      "routing": "sticky",
+      "scenario": "normal",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 10,
+        "rollup_reads": 7,
+        "rollup_write_attempts": 6,
+        "rollup_writes": 6,
+        "rejected_writes": 0,
+        "lease_lookups": 0,
+        "lease_grants": 0,
+        "lease_renewals": 0,
+        "checkpoint_regressions": 0,
+        "stale_counter_ms": 230,
+        "max_active_jobs": 1,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 0,
+        "final_catchup_ms": 50
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 0
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 0
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 90,
+          "action": "save",
+          "worker": 0,
+          "count": 102,
+          "checkpoint": 2
+        },
+        {
+          "at_ms": 90,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 4,
+          "epoch": 0
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 130,
+          "action": "save",
+          "worker": 0,
+          "count": 104,
+          "checkpoint": 4
+        },
+        {
+          "at_ms": 130,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 6,
+          "epoch": 0
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 170,
+          "action": "save",
+          "worker": 0,
+          "count": 106,
+          "checkpoint": 6
+        },
+        {
+          "at_ms": 170,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 8,
+          "epoch": 0
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 210,
+          "action": "save",
+          "worker": 0,
+          "count": 108,
+          "checkpoint": 8
+        },
+        {
+          "at_ms": 210,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 10,
+          "epoch": 0
+        },
+        {
+          "at_ms": 250,
+          "action": "save",
+          "worker": 0,
+          "count": 110,
+          "checkpoint": 10
+        }
+      ]
+    },
+    {
+      "strategy": "owned",
+      "routing": "sticky",
+      "scenario": "normal",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 10,
+        "rollup_reads": 7,
+        "rollup_write_attempts": 6,
+        "rollup_writes": 6,
+        "rejected_writes": 0,
+        "lease_lookups": 20,
+        "lease_grants": 1,
+        "lease_renewals": 24,
+        "checkpoint_regressions": 0,
+        "stale_counter_ms": 230,
+        "max_active_jobs": 1,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 0,
+        "final_catchup_ms": 50
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "grant",
+          "worker": 0,
+          "epoch": 1
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 1
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 1
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 90,
+          "action": "save",
+          "worker": 0,
+          "count": 102,
+          "checkpoint": 2
+        },
+        {
+          "at_ms": 90,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 4,
+          "epoch": 1
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 130,
+          "action": "save",
+          "worker": 0,
+          "count": 104,
+          "checkpoint": 4
+        },
+        {
+          "at_ms": 130,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 6,
+          "epoch": 1
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 170,
+          "action": "save",
+          "worker": 0,
+          "count": 106,
+          "checkpoint": 6
+        },
+        {
+          "at_ms": 170,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 8,
+          "epoch": 1
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 210,
+          "action": "save",
+          "worker": 0,
+          "count": 108,
+          "checkpoint": 8
+        },
+        {
+          "at_ms": 210,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 10,
+          "epoch": 1
+        },
+        {
+          "at_ms": 250,
+          "action": "save",
+          "worker": 0,
+          "count": 110,
+          "checkpoint": 10
+        }
+      ]
+    },
+    {
+      "strategy": "overlap",
+      "routing": "round_robin",
+      "scenario": "normal",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 20,
+        "rollup_reads": 14,
+        "rollup_write_attempts": 12,
+        "rollup_writes": 12,
+        "rejected_writes": 0,
+        "lease_lookups": 0,
+        "lease_grants": 0,
+        "lease_renewals": 0,
+        "checkpoint_regressions": 0,
+        "stale_counter_ms": 230,
+        "max_active_jobs": 2,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 10,
+        "final_catchup_ms": 50
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 0
+        },
+        {
+          "at_ms": 25,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 1,
+          "epoch": 0
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 0
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 60,
+          "action": "save",
+          "worker": 1,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 60,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 3,
+          "epoch": 0
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 90,
+          "action": "save",
+          "worker": 0,
+          "count": 102,
+          "checkpoint": 2
+        },
+        {
+          "at_ms": 90,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 4,
+          "epoch": 0
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 100,
+          "action": "save",
+          "worker": 1,
+          "count": 103,
+          "checkpoint": 3
+        },
+        {
+          "at_ms": 100,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 5,
+          "epoch": 0
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 130,
+          "action": "save",
+          "worker": 0,
+          "count": 104,
+          "checkpoint": 4
+        },
+        {
+          "at_ms": 130,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 6,
+          "epoch": 0
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 140,
+          "action": "save",
+          "worker": 1,
+          "count": 105,
+          "checkpoint": 5
+        },
+        {
+          "at_ms": 140,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 7,
+          "epoch": 0
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 170,
+          "action": "save",
+          "worker": 0,
+          "count": 106,
+          "checkpoint": 6
+        },
+        {
+          "at_ms": 170,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 8,
+          "epoch": 0
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 180,
+          "action": "save",
+          "worker": 1,
+          "count": 107,
+          "checkpoint": 7
+        },
+        {
+          "at_ms": 180,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 9,
+          "epoch": 0
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 210,
+          "action": "save",
+          "worker": 0,
+          "count": 108,
+          "checkpoint": 8
+        },
+        {
+          "at_ms": 210,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 10,
+          "epoch": 0
+        },
+        {
+          "at_ms": 220,
+          "action": "save",
+          "worker": 1,
+          "count": 109,
+          "checkpoint": 9
+        },
+        {
+          "at_ms": 220,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 10,
+          "epoch": 0
+        },
+        {
+          "at_ms": 250,
+          "action": "save",
+          "worker": 0,
+          "count": 110,
+          "checkpoint": 10
+        },
+        {
+          "at_ms": 255,
+          "action": "save",
+          "worker": 1,
+          "count": 110,
+          "checkpoint": 10
+        }
+      ]
+    },
+    {
+      "strategy": "owned",
+      "routing": "round_robin",
+      "scenario": "normal",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 10,
+        "rollup_reads": 7,
+        "rollup_write_attempts": 6,
+        "rollup_writes": 6,
+        "rejected_writes": 0,
+        "lease_lookups": 20,
+        "lease_grants": 1,
+        "lease_renewals": 24,
+        "checkpoint_regressions": 0,
+        "stale_counter_ms": 230,
+        "max_active_jobs": 1,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 0,
+        "final_catchup_ms": 50
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "grant",
+          "worker": 0,
+          "epoch": 1
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 1
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 1
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 90,
+          "action": "save",
+          "worker": 0,
+          "count": 102,
+          "checkpoint": 2
+        },
+        {
+          "at_ms": 90,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 4,
+          "epoch": 1
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 130,
+          "action": "save",
+          "worker": 0,
+          "count": 104,
+          "checkpoint": 4
+        },
+        {
+          "at_ms": 130,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 6,
+          "epoch": 1
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 170,
+          "action": "save",
+          "worker": 0,
+          "count": 106,
+          "checkpoint": 6
+        },
+        {
+          "at_ms": 170,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 8,
+          "epoch": 1
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 210,
+          "action": "save",
+          "worker": 0,
+          "count": 108,
+          "checkpoint": 8
+        },
+        {
+          "at_ms": 210,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 10,
+          "epoch": 1
+        },
+        {
+          "at_ms": 250,
+          "action": "save",
+          "worker": 0,
+          "count": 110,
+          "checkpoint": 10
+        }
+      ]
+    },
+    {
+      "strategy": "overlap",
+      "routing": "sticky",
+      "scenario": "crash",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 11,
+        "rollup_reads": 8,
+        "rollup_write_attempts": 6,
+        "rollup_writes": 6,
+        "rejected_writes": 0,
+        "lease_lookups": 0,
+        "lease_grants": 0,
+        "lease_renewals": 0,
+        "checkpoint_regressions": 0,
+        "stale_counter_ms": 250,
+        "max_active_jobs": 1,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 1,
+        "final_catchup_ms": 70
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 0
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 0
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 65,
+          "action": "crash",
+          "worker": 0
+        },
+        {
+          "at_ms": 75,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 3,
+          "epoch": 0
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 115,
+          "action": "save",
+          "worker": 1,
+          "count": 103,
+          "checkpoint": 3
+        },
+        {
+          "at_ms": 115,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 5,
+          "epoch": 0
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 155,
+          "action": "save",
+          "worker": 1,
+          "count": 105,
+          "checkpoint": 5
+        },
+        {
+          "at_ms": 155,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 7,
+          "epoch": 0
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 195,
+          "action": "save",
+          "worker": 1,
+          "count": 107,
+          "checkpoint": 7
+        },
+        {
+          "at_ms": 195,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 9,
+          "epoch": 0
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 235,
+          "action": "save",
+          "worker": 1,
+          "count": 109,
+          "checkpoint": 9
+        },
+        {
+          "at_ms": 235,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 10,
+          "epoch": 0
+        },
+        {
+          "at_ms": 270,
+          "action": "save",
+          "worker": 1,
+          "count": 110,
+          "checkpoint": 10
+        },
+        {
+          "at_ms": 400,
+          "action": "recover",
+          "worker": 0
+        }
+      ]
+    },
+    {
+      "strategy": "owned",
+      "routing": "sticky",
+      "scenario": "crash",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 11,
+        "rollup_reads": 5,
+        "rollup_write_attempts": 3,
+        "rollup_writes": 3,
+        "rejected_writes": 0,
+        "lease_lookups": 20,
+        "lease_grants": 2,
+        "lease_renewals": 20,
+        "checkpoint_regressions": 0,
+        "stale_counter_ms": 235,
+        "max_active_jobs": 1,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 1,
+        "final_catchup_ms": 55
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "grant",
+          "worker": 0,
+          "epoch": 1
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 1
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 1
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 65,
+          "action": "crash",
+          "worker": 0
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 150,
+          "action": "grant",
+          "worker": 1,
+          "epoch": 2
+        },
+        {
+          "at_ms": 150,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 7,
+          "epoch": 2
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 210,
+          "action": "save",
+          "worker": 1,
+          "count": 107,
+          "checkpoint": 7
+        },
+        {
+          "at_ms": 210,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 10,
+          "epoch": 2
+        },
+        {
+          "at_ms": 255,
+          "action": "save",
+          "worker": 1,
+          "count": 110,
+          "checkpoint": 10
+        },
+        {
+          "at_ms": 400,
+          "action": "recover",
+          "worker": 0
+        }
+      ]
+    },
+    {
+      "strategy": "overlap",
+      "routing": "round_robin",
+      "scenario": "crash",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 12,
+        "rollup_reads": 9,
+        "rollup_write_attempts": 7,
+        "rollup_writes": 7,
+        "rejected_writes": 0,
+        "lease_lookups": 0,
+        "lease_grants": 0,
+        "lease_renewals": 0,
+        "checkpoint_regressions": 0,
+        "stale_counter_ms": 235,
+        "max_active_jobs": 2,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 2,
+        "final_catchup_ms": 55
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 0
+        },
+        {
+          "at_ms": 25,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 1,
+          "epoch": 0
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 0
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 60,
+          "action": "save",
+          "worker": 1,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 60,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 3,
+          "epoch": 0
+        },
+        {
+          "at_ms": 65,
+          "action": "crash",
+          "worker": 0
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 100,
+          "action": "save",
+          "worker": 1,
+          "count": 103,
+          "checkpoint": 3
+        },
+        {
+          "at_ms": 100,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 5,
+          "epoch": 0
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 140,
+          "action": "save",
+          "worker": 1,
+          "count": 105,
+          "checkpoint": 5
+        },
+        {
+          "at_ms": 140,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 7,
+          "epoch": 0
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 180,
+          "action": "save",
+          "worker": 1,
+          "count": 107,
+          "checkpoint": 7
+        },
+        {
+          "at_ms": 180,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 9,
+          "epoch": 0
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 220,
+          "action": "save",
+          "worker": 1,
+          "count": 109,
+          "checkpoint": 9
+        },
+        {
+          "at_ms": 220,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 10,
+          "epoch": 0
+        },
+        {
+          "at_ms": 255,
+          "action": "save",
+          "worker": 1,
+          "count": 110,
+          "checkpoint": 10
+        },
+        {
+          "at_ms": 400,
+          "action": "recover",
+          "worker": 0
+        }
+      ]
+    },
+    {
+      "strategy": "owned",
+      "routing": "round_robin",
+      "scenario": "crash",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 11,
+        "rollup_reads": 5,
+        "rollup_write_attempts": 3,
+        "rollup_writes": 3,
+        "rejected_writes": 0,
+        "lease_lookups": 20,
+        "lease_grants": 2,
+        "lease_renewals": 20,
+        "checkpoint_regressions": 0,
+        "stale_counter_ms": 235,
+        "max_active_jobs": 1,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 1,
+        "final_catchup_ms": 55
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "grant",
+          "worker": 0,
+          "epoch": 1
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 1
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 1
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 65,
+          "action": "crash",
+          "worker": 0
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 150,
+          "action": "grant",
+          "worker": 1,
+          "epoch": 2
+        },
+        {
+          "at_ms": 150,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 7,
+          "epoch": 2
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 210,
+          "action": "save",
+          "worker": 1,
+          "count": 107,
+          "checkpoint": 7
+        },
+        {
+          "at_ms": 210,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 10,
+          "epoch": 2
+        },
+        {
+          "at_ms": 255,
+          "action": "save",
+          "worker": 1,
+          "count": 110,
+          "checkpoint": 10
+        },
+        {
+          "at_ms": 400,
+          "action": "recover",
+          "worker": 0
+        }
+      ]
+    },
+    {
+      "strategy": "overlap",
+      "routing": "sticky",
+      "scenario": "pause",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 10,
+        "rollup_reads": 4,
+        "rollup_write_attempts": 3,
+        "rollup_writes": 3,
+        "rejected_writes": 0,
+        "lease_lookups": 0,
+        "lease_grants": 0,
+        "lease_renewals": 0,
+        "checkpoint_regressions": 0,
+        "stale_counter_ms": 450,
+        "max_active_jobs": 1,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 0,
+        "final_catchup_ms": 270
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 0
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 0
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 65,
+          "action": "pause",
+          "worker": 0
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 400,
+          "action": "recover",
+          "worker": 0
+        },
+        {
+          "at_ms": 400,
+          "action": "save",
+          "worker": 0,
+          "count": 102,
+          "checkpoint": 2
+        },
+        {
+          "at_ms": 400,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 10,
+          "epoch": 0
+        },
+        {
+          "at_ms": 470,
+          "action": "save",
+          "worker": 0,
+          "count": 110,
+          "checkpoint": 10
+        }
+      ]
+    },
+    {
+      "strategy": "owned",
+      "routing": "sticky",
+      "scenario": "pause",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 11,
+        "rollup_reads": 5,
+        "rollup_write_attempts": 4,
+        "rollup_writes": 3,
+        "rejected_writes": 1,
+        "lease_lookups": 20,
+        "lease_grants": 2,
+        "lease_renewals": 20,
+        "checkpoint_regressions": 0,
+        "stale_counter_ms": 235,
+        "max_active_jobs": 2,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 1,
+        "final_catchup_ms": 55
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "grant",
+          "worker": 0,
+          "epoch": 1
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 1
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 1
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 65,
+          "action": "pause",
+          "worker": 0
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 150,
+          "action": "grant",
+          "worker": 1,
+          "epoch": 2
+        },
+        {
+          "at_ms": 150,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 7,
+          "epoch": 2
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 210,
+          "action": "save",
+          "worker": 1,
+          "count": 107,
+          "checkpoint": 7
+        },
+        {
+          "at_ms": 210,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 10,
+          "epoch": 2
+        },
+        {
+          "at_ms": 255,
+          "action": "save",
+          "worker": 1,
+          "count": 110,
+          "checkpoint": 10
+        },
+        {
+          "at_ms": 400,
+          "action": "recover",
+          "worker": 0
+        },
+        {
+          "at_ms": 400,
+          "action": "reject",
+          "worker": 0,
+          "epoch": 1
+        }
+      ]
+    },
+    {
+      "strategy": "overlap",
+      "routing": "round_robin",
+      "scenario": "pause",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 28,
+        "rollup_reads": 12,
+        "rollup_write_attempts": 10,
+        "rollup_writes": 10,
+        "rejected_writes": 0,
+        "lease_lookups": 0,
+        "lease_grants": 0,
+        "lease_renewals": 0,
+        "checkpoint_regressions": 1,
+        "stale_counter_ms": 305,
+        "max_active_jobs": 2,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 18,
+        "final_catchup_ms": 270
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 0
+        },
+        {
+          "at_ms": 25,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 1,
+          "epoch": 0
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 0
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 60,
+          "action": "save",
+          "worker": 1,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 60,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 3,
+          "epoch": 0
+        },
+        {
+          "at_ms": 65,
+          "action": "pause",
+          "worker": 0
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 100,
+          "action": "save",
+          "worker": 1,
+          "count": 103,
+          "checkpoint": 3
+        },
+        {
+          "at_ms": 100,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 5,
+          "epoch": 0
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 140,
+          "action": "save",
+          "worker": 1,
+          "count": 105,
+          "checkpoint": 5
+        },
+        {
+          "at_ms": 140,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 7,
+          "epoch": 0
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 180,
+          "action": "save",
+          "worker": 1,
+          "count": 107,
+          "checkpoint": 7
+        },
+        {
+          "at_ms": 180,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 9,
+          "epoch": 0
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 220,
+          "action": "save",
+          "worker": 1,
+          "count": 109,
+          "checkpoint": 9
+        },
+        {
+          "at_ms": 220,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 10,
+          "epoch": 0
+        },
+        {
+          "at_ms": 255,
+          "action": "save",
+          "worker": 1,
+          "count": 110,
+          "checkpoint": 10
+        },
+        {
+          "at_ms": 400,
+          "action": "recover",
+          "worker": 0
+        },
+        {
+          "at_ms": 400,
+          "action": "save",
+          "worker": 0,
+          "count": 102,
+          "checkpoint": 2
+        },
+        {
+          "at_ms": 400,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 10,
+          "epoch": 0
+        },
+        {
+          "at_ms": 425,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 10,
+          "epoch": 0
+        },
+        {
+          "at_ms": 470,
+          "action": "save",
+          "worker": 0,
+          "count": 110,
+          "checkpoint": 10
+        },
+        {
+          "at_ms": 495,
+          "action": "save",
+          "worker": 1,
+          "count": 110,
+          "checkpoint": 10
+        }
+      ]
+    },
+    {
+      "strategy": "owned",
+      "routing": "round_robin",
+      "scenario": "pause",
+      "config": {
+        "events": 10,
+        "arrival_ms": 20,
+        "scan_base_ms": 30,
+        "scan_per_event_ms": 5,
+        "tick_ms": 25,
+        "lease_ms": 100,
+        "failure_ms": 65,
+        "recovery_ms": 400,
+        "horizon_ms": 600
+      },
+      "metrics": {
+        "event_reads": 11,
+        "rollup_reads": 5,
+        "rollup_write_attempts": 4,
+        "rollup_writes": 3,
+        "rejected_writes": 1,
+        "lease_lookups": 20,
+        "lease_grants": 2,
+        "lease_renewals": 20,
+        "checkpoint_regressions": 0,
+        "stale_counter_ms": 235,
+        "max_active_jobs": 2,
+        "reconciliation_checks": 24,
+        "duplicate_inputs": 0,
+        "repeated_event_reads": 1,
+        "final_catchup_ms": 55
+      },
+      "final_count": 110,
+      "expected_count": 110,
+      "converged": true,
+      "trace": [
+        {
+          "at_ms": 20,
+          "action": "accept",
+          "event": "E1"
+        },
+        {
+          "at_ms": 20,
+          "action": "grant",
+          "worker": 0,
+          "epoch": 1
+        },
+        {
+          "at_ms": 20,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 1,
+          "epoch": 1
+        },
+        {
+          "at_ms": 40,
+          "action": "accept",
+          "event": "E2"
+        },
+        {
+          "at_ms": 55,
+          "action": "save",
+          "worker": 0,
+          "count": 101,
+          "checkpoint": 1
+        },
+        {
+          "at_ms": 55,
+          "action": "start",
+          "worker": 0,
+          "checkpoint": 2,
+          "epoch": 1
+        },
+        {
+          "at_ms": 60,
+          "action": "accept",
+          "event": "E3"
+        },
+        {
+          "at_ms": 65,
+          "action": "pause",
+          "worker": 0
+        },
+        {
+          "at_ms": 80,
+          "action": "accept",
+          "event": "E4"
+        },
+        {
+          "at_ms": 100,
+          "action": "accept",
+          "event": "E5"
+        },
+        {
+          "at_ms": 120,
+          "action": "accept",
+          "event": "E6"
+        },
+        {
+          "at_ms": 140,
+          "action": "accept",
+          "event": "E7"
+        },
+        {
+          "at_ms": 150,
+          "action": "grant",
+          "worker": 1,
+          "epoch": 2
+        },
+        {
+          "at_ms": 150,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 7,
+          "epoch": 2
+        },
+        {
+          "at_ms": 160,
+          "action": "accept",
+          "event": "E8"
+        },
+        {
+          "at_ms": 180,
+          "action": "accept",
+          "event": "E9"
+        },
+        {
+          "at_ms": 200,
+          "action": "accept",
+          "event": "E10"
+        },
+        {
+          "at_ms": 210,
+          "action": "save",
+          "worker": 1,
+          "count": 107,
+          "checkpoint": 7
+        },
+        {
+          "at_ms": 210,
+          "action": "start",
+          "worker": 1,
+          "checkpoint": 10,
+          "epoch": 2
+        },
+        {
+          "at_ms": 255,
+          "action": "save",
+          "worker": 1,
+          "count": 110,
+          "checkpoint": 10
+        },
+        {
+          "at_ms": 400,
+          "action": "recover",
+          "worker": 0
+        },
+        {
+          "at_ms": 400,
+          "action": "reject",
+          "worker": 0,
+          "epoch": 1
+        }
+      ]
+    }
+  ]
+}

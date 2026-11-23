@@ -1,0 +1,13 @@
+{
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "sqlite": "3.49.1",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "logical_cpus": 16,
+  "start_method": "spawn",
+  "journal_mode": "WAL",
+  "synchronous": "FULL",
+  "clock": "perf_counter_ns; shared high-resolution clock across Windows processes",
+  "observer": "Separate spawned read-only sampling process",
+  "scope": "Local shared SQLite, not a distributed database or throughput benchmark",
+  "script_sha256": "976e745bf710429d2fdeadb06b617b135333ffd4e6ff9a1b737c6f64b0377e9d"
+}

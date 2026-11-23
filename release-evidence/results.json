@@ -1,0 +1,9979 @@
+[
+  {
+    "run": "r1-pause-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      65516,
+      53808
+    ],
+    "observer_pid": 62632,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1173.5941,
+    "metrics": {
+      "renewal_transactions": 80,
+      "renewed_rows": 317,
+      "lease_reads": 95,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 92,
+      "write_attempts": 90,
+      "fence_checks": 90,
+      "regressions": 0,
+      "writes": 89,
+      "commit_path_ns": 159652700,
+      "rejected_writes": 1,
+      "ingest_transactions": 60,
+      "route_lease_queries": 87,
+      "reminders": 238,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 37.2549,
+      "stable_visibility_p95_ms": 249.6893,
+      "stable_visibility_max_ms": 309.9668,
+      "oldest_missing_max_ms": 304.696,
+      "observer_max_gap_ms": 160.0666
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-crash-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      60160,
+      66716
+    ],
+    "observer_pid": 28220,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1179.5596,
+    "metrics": {
+      "snapshot_transactions": 108,
+      "write_attempts": 94,
+      "regressions": 0,
+      "writes": 94,
+      "commit_path_ns": 120016200,
+      "ingest_transactions": 60,
+      "reminders": 216,
+      "reconciliation_queries": 59,
+      "event_reads": 498,
+      "repeated_event_reads": 18,
+      "stable_visibility_p50_ms": 25.0671,
+      "stable_visibility_p95_ms": 46.0899,
+      "stable_visibility_max_ms": 73.3183,
+      "oldest_missing_max_ms": 67.7973,
+      "observer_max_gap_ms": 164.2015
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-crash-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      64400,
+      60420
+    ],
+    "observer_pid": 21544,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1178.4533,
+    "metrics": {
+      "renewal_transactions": 52,
+      "renewed_rows": 310,
+      "lease_reads": 88,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 88,
+      "write_attempts": 84,
+      "fence_checks": 84,
+      "regressions": 0,
+      "writes": 84,
+      "commit_path_ns": 98836700,
+      "ingest_transactions": 60,
+      "route_lease_queries": 88,
+      "reminders": 236,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 31.9686,
+      "stable_visibility_p95_ms": 227.6926,
+      "stable_visibility_max_ms": 288.6253,
+      "oldest_missing_max_ms": 283.2272,
+      "observer_max_gap_ms": 173.9132
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-normal-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      42508,
+      61396
+    ],
+    "observer_pid": 53052,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1175.2416,
+    "metrics": {
+      "snapshot_transactions": 139,
+      "write_attempts": 107,
+      "regressions": 0,
+      "writes": 107,
+      "commit_path_ns": 172207300,
+      "ingest_transactions": 60,
+      "reminders": 218,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 20.6837,
+      "stable_visibility_p95_ms": 49.4084,
+      "stable_visibility_max_ms": 80.3314,
+      "oldest_missing_max_ms": 74.822,
+      "observer_max_gap_ms": 166.9205
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-crash-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      67392,
+      18796
+    ],
+    "observer_pid": 62300,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1167.9487,
+    "metrics": {
+      "renewal_transactions": 51,
+      "renewed_rows": 302,
+      "lease_reads": 94,
+      "lease_grant_transactions": 13,
+      "lease_grants": 13,
+      "snapshot_transactions": 90,
+      "write_attempts": 82,
+      "fence_checks": 82,
+      "regressions": 0,
+      "writes": 82,
+      "commit_path_ns": 131273900,
+      "ingest_transactions": 60,
+      "route_lease_queries": 89,
+      "reminders": 248,
+      "reconciliation_queries": 59,
+      "event_reads": 499,
+      "repeated_event_reads": 19,
+      "stable_visibility_p50_ms": 36.828050000000005,
+      "stable_visibility_p95_ms": 256.2169,
+      "stable_visibility_max_ms": 331.4576,
+      "oldest_missing_max_ms": 325.9072,
+      "observer_max_gap_ms": 166.7932
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-normal-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      63000,
+      33308
+    ],
+    "observer_pid": 25744,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1175.0456,
+    "metrics": {
+      "snapshot_transactions": 101,
+      "write_attempts": 98,
+      "regressions": 0,
+      "writes": 98,
+      "commit_path_ns": 171274400,
+      "ingest_transactions": 60,
+      "reminders": 220,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 28.44085,
+      "stable_visibility_p95_ms": 53.4715,
+      "stable_visibility_max_ms": 72.1195,
+      "oldest_missing_max_ms": 66.8014,
+      "observer_max_gap_ms": 178.4942
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-pause-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      37688,
+      48392
+    ],
+    "observer_pid": 18844,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1178.1842,
+    "metrics": {
+      "snapshot_transactions": 118,
+      "write_attempts": 96,
+      "progress_checks": 96,
+      "regressions": 0,
+      "writes": 95,
+      "commit_path_ns": 128319300,
+      "superseded_writes": 1,
+      "ingest_transactions": 60,
+      "reminders": 237,
+      "reconciliation_queries": 59,
+      "event_reads": 493,
+      "repeated_event_reads": 13,
+      "stable_visibility_p50_ms": 27.35555,
+      "stable_visibility_p95_ms": 55.0179,
+      "stable_visibility_max_ms": 151.1727,
+      "oldest_missing_max_ms": 145.4217,
+      "observer_max_gap_ms": 161.8371
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-normal-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      40792,
+      53364
+    ],
+    "observer_pid": 65700,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1167.5024,
+    "metrics": {
+      "renewal_transactions": 91,
+      "renewed_rows": 343,
+      "lease_reads": 106,
+      "lease_grant_transactions": 8,
+      "lease_grants": 8,
+      "snapshot_transactions": 106,
+      "write_attempts": 101,
+      "fence_checks": 101,
+      "regressions": 0,
+      "writes": 101,
+      "commit_path_ns": 173265000,
+      "ingest_transactions": 60,
+      "route_lease_queries": 90,
+      "reminders": 237,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 29.3163,
+      "stable_visibility_p95_ms": 55.4933,
+      "stable_visibility_max_ms": 68.5201,
+      "oldest_missing_max_ms": 62.7692,
+      "observer_max_gap_ms": 159.8982
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-crash-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      64684,
+      54988
+    ],
+    "observer_pid": 53660,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.6921,
+    "metrics": {
+      "snapshot_transactions": 96,
+      "write_attempts": 93,
+      "progress_checks": 93,
+      "regressions": 0,
+      "writes": 93,
+      "commit_path_ns": 100974200,
+      "ingest_transactions": 60,
+      "reminders": 227,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 28.6995,
+      "stable_visibility_p95_ms": 53.08,
+      "stable_visibility_max_ms": 67.7027,
+      "oldest_missing_max_ms": 62.3469,
+      "observer_max_gap_ms": 170.5179
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-pause-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      12784,
+      38032
+    ],
+    "observer_pid": 59860,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1184.5965,
+    "metrics": {
+      "snapshot_transactions": 116,
+      "write_attempts": 98,
+      "regressions": 1,
+      "writes": 98,
+      "commit_path_ns": 125547900,
+      "ingest_transactions": 60,
+      "reminders": 221,
+      "reconciliation_queries": 59,
+      "event_reads": 663,
+      "repeated_event_reads": 183,
+      "stable_visibility_p50_ms": 38.4724,
+      "stable_visibility_p95_ms": 573.7193,
+      "stable_visibility_max_ms": 633.8908,
+      "oldest_missing_max_ms": 628.655,
+      "observer_max_gap_ms": 183.1076
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-normal-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      51340,
+      45504
+    ],
+    "observer_pid": 65188,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.6061,
+    "metrics": {
+      "snapshot_transactions": 140,
+      "write_attempts": 103,
+      "progress_checks": 103,
+      "regressions": 0,
+      "writes": 103,
+      "commit_path_ns": 161865900,
+      "ingest_transactions": 60,
+      "reminders": 217,
+      "reconciliation_queries": 59,
+      "event_reads": 490,
+      "repeated_event_reads": 10,
+      "stable_visibility_p50_ms": 20.7597,
+      "stable_visibility_p95_ms": 42.3228,
+      "stable_visibility_max_ms": 72.2949,
+      "oldest_missing_max_ms": 67.0937,
+      "observer_max_gap_ms": 184.5991
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-crash-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      25440,
+      38060
+    ],
+    "observer_pid": 57084,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1179.6684,
+    "metrics": {
+      "snapshot_transactions": 102,
+      "write_attempts": 96,
+      "regressions": 0,
+      "writes": 96,
+      "commit_path_ns": 146299100,
+      "ingest_transactions": 60,
+      "reminders": 237,
+      "reconciliation_queries": 59,
+      "event_reads": 499,
+      "repeated_event_reads": 19,
+      "stable_visibility_p50_ms": 30.81975,
+      "stable_visibility_p95_ms": 57.1117,
+      "stable_visibility_max_ms": 72.8671,
+      "oldest_missing_max_ms": 67.1984,
+      "observer_max_gap_ms": 165.2593
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-crash-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      46816,
+      59316
+    ],
+    "observer_pid": 48488,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.5726,
+    "metrics": {
+      "snapshot_transactions": 112,
+      "write_attempts": 98,
+      "progress_checks": 98,
+      "regressions": 0,
+      "writes": 98,
+      "commit_path_ns": 161440300,
+      "ingest_transactions": 60,
+      "reminders": 231,
+      "reconciliation_queries": 59,
+      "event_reads": 493,
+      "repeated_event_reads": 13,
+      "stable_visibility_p50_ms": 30.0862,
+      "stable_visibility_p95_ms": 55.3044,
+      "stable_visibility_max_ms": 77.9803,
+      "oldest_missing_max_ms": 72.6533,
+      "observer_max_gap_ms": 161.5435
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-normal-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      18540,
+      50004
+    ],
+    "observer_pid": 66912,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1179.9196,
+    "metrics": {
+      "snapshot_transactions": 100,
+      "write_attempts": 97,
+      "progress_checks": 97,
+      "regressions": 0,
+      "writes": 97,
+      "commit_path_ns": 151387200,
+      "ingest_transactions": 60,
+      "reminders": 224,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 29.8225,
+      "stable_visibility_p95_ms": 54.3218,
+      "stable_visibility_max_ms": 69.4751,
+      "oldest_missing_max_ms": 64.2406,
+      "observer_max_gap_ms": 182.3696
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-pause-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      51536,
+      50080
+    ],
+    "observer_pid": 51056,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1168.8536,
+    "metrics": {
+      "snapshot_transactions": 73,
+      "write_attempts": 71,
+      "regressions": 0,
+      "writes": 71,
+      "commit_path_ns": 137057500,
+      "ingest_transactions": 60,
+      "reminders": 253,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 58.107,
+      "stable_visibility_p95_ms": 622.6942,
+      "stable_visibility_max_ms": 646.4252,
+      "oldest_missing_max_ms": 640.8037,
+      "observer_max_gap_ms": 171.2914
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-pause-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      57780,
+      65524
+    ],
+    "observer_pid": 12752,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1178.8273,
+    "metrics": {
+      "renewal_transactions": 79,
+      "renewed_rows": 316,
+      "lease_reads": 101,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 94,
+      "write_attempts": 89,
+      "fence_checks": 89,
+      "regressions": 0,
+      "writes": 88,
+      "commit_path_ns": 117079500,
+      "rejected_writes": 1,
+      "ingest_transactions": 60,
+      "route_lease_queries": 87,
+      "reminders": 231,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 35.9443,
+      "stable_visibility_p95_ms": 201.7254,
+      "stable_visibility_max_ms": 256.6636,
+      "oldest_missing_max_ms": 251.2347,
+      "observer_max_gap_ms": 179.6015
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-pause-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      25472,
+      10956
+    ],
+    "observer_pid": 44416,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.593,
+    "metrics": {
+      "snapshot_transactions": 73,
+      "write_attempts": 72,
+      "progress_checks": 72,
+      "regressions": 0,
+      "writes": 72,
+      "commit_path_ns": 133931200,
+      "ingest_transactions": 60,
+      "reminders": 256,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 66.2768,
+      "stable_visibility_p95_ms": 621.6939,
+      "stable_visibility_max_ms": 662.8578,
+      "oldest_missing_max_ms": 657.3533,
+      "observer_max_gap_ms": 171.9665
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r1-normal-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      54460,
+      40256
+    ],
+    "observer_pid": 26544,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.9235,
+    "metrics": {
+      "renewal_transactions": 88,
+      "renewed_rows": 333,
+      "lease_reads": 105,
+      "lease_grant_transactions": 8,
+      "lease_grants": 8,
+      "snapshot_transactions": 99,
+      "write_attempts": 95,
+      "fence_checks": 95,
+      "regressions": 0,
+      "writes": 95,
+      "commit_path_ns": 161654500,
+      "ingest_transactions": 60,
+      "route_lease_queries": 90,
+      "reminders": 222,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 30.2019,
+      "stable_visibility_p95_ms": 58.0476,
+      "stable_visibility_max_ms": 70.5564,
+      "oldest_missing_max_ms": 65.0303,
+      "observer_max_gap_ms": 164.2625
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-pause-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      29804,
+      63228
+    ],
+    "observer_pid": 60520,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.1054,
+    "metrics": {
+      "snapshot_transactions": 73,
+      "write_attempts": 71,
+      "regressions": 0,
+      "writes": 71,
+      "commit_path_ns": 83777900,
+      "ingest_transactions": 60,
+      "reminders": 254,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 44.3014,
+      "stable_visibility_p95_ms": 619.5268,
+      "stable_visibility_max_ms": 643.6459,
+      "oldest_missing_max_ms": 638.2359,
+      "observer_max_gap_ms": 179.7278
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-pause-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      60560,
+      59300
+    ],
+    "observer_pid": 38036,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1183.1457,
+    "metrics": {
+      "snapshot_transactions": 120,
+      "write_attempts": 92,
+      "progress_checks": 92,
+      "regressions": 0,
+      "writes": 91,
+      "commit_path_ns": 114927200,
+      "superseded_writes": 1,
+      "ingest_transactions": 60,
+      "reminders": 236,
+      "reconciliation_queries": 59,
+      "event_reads": 485,
+      "repeated_event_reads": 5,
+      "stable_visibility_p50_ms": 27.1327,
+      "stable_visibility_p95_ms": 82.385,
+      "stable_visibility_max_ms": 118.4878,
+      "oldest_missing_max_ms": 113.09,
+      "observer_max_gap_ms": 163.9623
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-pause-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      47488,
+      61340
+    ],
+    "observer_pid": 27124,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1168.5044,
+    "metrics": {
+      "snapshot_transactions": 121,
+      "write_attempts": 98,
+      "regressions": 1,
+      "writes": 98,
+      "commit_path_ns": 126440200,
+      "ingest_transactions": 60,
+      "reminders": 232,
+      "reconciliation_queries": 59,
+      "event_reads": 674,
+      "repeated_event_reads": 194,
+      "stable_visibility_p50_ms": 43.1606,
+      "stable_visibility_p95_ms": 569.262,
+      "stable_visibility_max_ms": 629.1557,
+      "oldest_missing_max_ms": 623.9978,
+      "observer_max_gap_ms": 161.1184
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-pause-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      66960,
+      42528
+    ],
+    "observer_pid": 61040,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1196.3798,
+    "metrics": {
+      "renewal_transactions": 79,
+      "renewed_rows": 316,
+      "lease_reads": 95,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 92,
+      "write_attempts": 92,
+      "fence_checks": 92,
+      "regressions": 0,
+      "writes": 91,
+      "commit_path_ns": 134657600,
+      "rejected_writes": 1,
+      "ingest_transactions": 60,
+      "route_lease_queries": 89,
+      "reminders": 251,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 32.4119,
+      "stable_visibility_p95_ms": 250.9594,
+      "stable_visibility_max_ms": 311.667,
+      "oldest_missing_max_ms": 306.1409,
+      "observer_max_gap_ms": 174.5269
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-normal-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      47764,
+      58644
+    ],
+    "observer_pid": 18444,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1178.8472,
+    "metrics": {
+      "snapshot_transactions": 101,
+      "write_attempts": 99,
+      "progress_checks": 99,
+      "regressions": 0,
+      "writes": 99,
+      "commit_path_ns": 147787700,
+      "ingest_transactions": 60,
+      "reminders": 222,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 27.7821,
+      "stable_visibility_p95_ms": 51.6907,
+      "stable_visibility_max_ms": 63.432,
+      "oldest_missing_max_ms": 57.6857,
+      "observer_max_gap_ms": 171.4015
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-normal-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      65220,
+      48204
+    ],
+    "observer_pid": 20680,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1173.3727,
+    "metrics": {
+      "renewal_transactions": 89,
+      "renewed_rows": 335,
+      "lease_reads": 99,
+      "lease_grant_transactions": 8,
+      "lease_grants": 8,
+      "snapshot_transactions": 99,
+      "write_attempts": 96,
+      "fence_checks": 96,
+      "regressions": 0,
+      "writes": 96,
+      "commit_path_ns": 137794300,
+      "ingest_transactions": 60,
+      "route_lease_queries": 90,
+      "reminders": 217,
+      "reconciliation_queries": 58,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 28.2858,
+      "stable_visibility_p95_ms": 57.4098,
+      "stable_visibility_max_ms": 72.1888,
+      "oldest_missing_max_ms": 66.9598,
+      "observer_max_gap_ms": 167.7823
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-normal-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      61988,
+      63504
+    ],
+    "observer_pid": 37960,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.8325,
+    "metrics": {
+      "snapshot_transactions": 137,
+      "write_attempts": 106,
+      "progress_checks": 106,
+      "regressions": 0,
+      "writes": 106,
+      "commit_path_ns": 163824600,
+      "ingest_transactions": 60,
+      "reminders": 211,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 25.1666,
+      "stable_visibility_p95_ms": 45.1828,
+      "stable_visibility_max_ms": 63.1358,
+      "oldest_missing_max_ms": 57.3551,
+      "observer_max_gap_ms": 166.6794
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-crash-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      5964,
+      18532
+    ],
+    "observer_pid": 59968,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1168.2796,
+    "metrics": {
+      "renewal_transactions": 52,
+      "renewed_rows": 315,
+      "lease_reads": 94,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 94,
+      "write_attempts": 90,
+      "fence_checks": 90,
+      "regressions": 0,
+      "writes": 90,
+      "commit_path_ns": 138382600,
+      "ingest_transactions": 60,
+      "route_lease_queries": 89,
+      "reminders": 240,
+      "reconciliation_queries": 59,
+      "event_reads": 492,
+      "repeated_event_reads": 12,
+      "stable_visibility_p50_ms": 33.2026,
+      "stable_visibility_p95_ms": 224.0024,
+      "stable_visibility_max_ms": 275.8593,
+      "oldest_missing_max_ms": 270.6201,
+      "observer_max_gap_ms": 166.0952
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-normal-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      30956,
+      25508
+    ],
+    "observer_pid": 44244,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.6598,
+    "metrics": {
+      "renewal_transactions": 90,
+      "renewed_rows": 338,
+      "lease_reads": 103,
+      "lease_grant_transactions": 8,
+      "lease_grants": 8,
+      "snapshot_transactions": 100,
+      "write_attempts": 95,
+      "fence_checks": 95,
+      "regressions": 0,
+      "writes": 95,
+      "commit_path_ns": 140891500,
+      "ingest_transactions": 60,
+      "route_lease_queries": 88,
+      "reminders": 221,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 30.737949999999998,
+      "stable_visibility_p95_ms": 61.2599,
+      "stable_visibility_max_ms": 73.0985,
+      "oldest_missing_max_ms": 67.9532,
+      "observer_max_gap_ms": 168.7422
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-pause-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      48756,
+      53308
+    ],
+    "observer_pid": 66328,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1180.649,
+    "metrics": {
+      "renewal_transactions": 80,
+      "renewed_rows": 307,
+      "lease_reads": 103,
+      "lease_grant_transactions": 15,
+      "lease_grants": 15,
+      "snapshot_transactions": 92,
+      "write_attempts": 89,
+      "fence_checks": 89,
+      "regressions": 0,
+      "writes": 88,
+      "commit_path_ns": 125553300,
+      "rejected_writes": 1,
+      "ingest_transactions": 60,
+      "route_lease_queries": 90,
+      "reminders": 246,
+      "reconciliation_queries": 59,
+      "event_reads": 487,
+      "repeated_event_reads": 7,
+      "stable_visibility_p50_ms": 32.4044,
+      "stable_visibility_p95_ms": 190.9609,
+      "stable_visibility_max_ms": 249.9757,
+      "oldest_missing_max_ms": 244.6027,
+      "observer_max_gap_ms": 176.7793
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-crash-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      46752,
+      14012
+    ],
+    "observer_pid": 61004,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.4244,
+    "metrics": {
+      "snapshot_transactions": 111,
+      "write_attempts": 95,
+      "regressions": 0,
+      "writes": 95,
+      "commit_path_ns": 110726700,
+      "ingest_transactions": 60,
+      "reminders": 226,
+      "reconciliation_queries": 59,
+      "event_reads": 514,
+      "repeated_event_reads": 34,
+      "stable_visibility_p50_ms": 27.5534,
+      "stable_visibility_p95_ms": 49.8478,
+      "stable_visibility_max_ms": 86.412,
+      "oldest_missing_max_ms": 81.2256,
+      "observer_max_gap_ms": 180.9957
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-normal-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      41148,
+      49388
+    ],
+    "observer_pid": 35356,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1173.9654,
+    "metrics": {
+      "snapshot_transactions": 138,
+      "write_attempts": 103,
+      "regressions": 0,
+      "writes": 103,
+      "commit_path_ns": 161258500,
+      "ingest_transactions": 60,
+      "reminders": 218,
+      "reconciliation_queries": 59,
+      "event_reads": 488,
+      "repeated_event_reads": 8,
+      "stable_visibility_p50_ms": 22.6464,
+      "stable_visibility_p95_ms": 47.7807,
+      "stable_visibility_max_ms": 52.9356,
+      "oldest_missing_max_ms": 47.6268,
+      "observer_max_gap_ms": 182.3012
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-crash-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      19392,
+      51960
+    ],
+    "observer_pid": 56816,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1167.9292,
+    "metrics": {
+      "snapshot_transactions": 99,
+      "write_attempts": 92,
+      "progress_checks": 92,
+      "regressions": 0,
+      "writes": 92,
+      "commit_path_ns": 133738700,
+      "ingest_transactions": 60,
+      "reminders": 231,
+      "reconciliation_queries": 59,
+      "event_reads": 492,
+      "repeated_event_reads": 12,
+      "stable_visibility_p50_ms": 33.5486,
+      "stable_visibility_p95_ms": 59.0695,
+      "stable_visibility_max_ms": 76.2771,
+      "oldest_missing_max_ms": 70.7843,
+      "observer_max_gap_ms": 167.802
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-crash-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      39608,
+      59408
+    ],
+    "observer_pid": 17452,
+    "worker_exits": [
+      0,
+      73
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1166.5847,
+    "metrics": {
+      "renewal_transactions": 52,
+      "renewed_rows": 316,
+      "lease_reads": 96,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 92,
+      "write_attempts": 88,
+      "fence_checks": 88,
+      "regressions": 0,
+      "writes": 88,
+      "commit_path_ns": 88089300,
+      "ingest_transactions": 60,
+      "route_lease_queries": 90,
+      "reminders": 234,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 29.1926,
+      "stable_visibility_p95_ms": 234.8739,
+      "stable_visibility_max_ms": 337.9258,
+      "oldest_missing_max_ms": 332.7661,
+      "observer_max_gap_ms": 174.5778
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-normal-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      10856,
+      12524
+    ],
+    "observer_pid": 21540,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1175.6283,
+    "metrics": {
+      "snapshot_transactions": 105,
+      "write_attempts": 97,
+      "regressions": 0,
+      "writes": 97,
+      "commit_path_ns": 126350800,
+      "ingest_transactions": 60,
+      "reminders": 225,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 27.3899,
+      "stable_visibility_p95_ms": 53.4401,
+      "stable_visibility_max_ms": 54.6712,
+      "oldest_missing_max_ms": 49.3162,
+      "observer_max_gap_ms": 178.4664
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-pause-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      51528,
+      61584
+    ],
+    "observer_pid": 38636,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.7355,
+    "metrics": {
+      "snapshot_transactions": 71,
+      "write_attempts": 69,
+      "progress_checks": 69,
+      "regressions": 0,
+      "writes": 69,
+      "commit_path_ns": 137023500,
+      "ingest_transactions": 60,
+      "reminders": 261,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 56.5847,
+      "stable_visibility_p95_ms": 601.9727,
+      "stable_visibility_max_ms": 629.9578,
+      "oldest_missing_max_ms": 624.398,
+      "observer_max_gap_ms": 169.5314
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-crash-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      42116,
+      944
+    ],
+    "observer_pid": 27392,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1179.8167,
+    "metrics": {
+      "snapshot_transactions": 117,
+      "write_attempts": 104,
+      "progress_checks": 104,
+      "regressions": 0,
+      "writes": 104,
+      "commit_path_ns": 134672700,
+      "ingest_transactions": 60,
+      "reminders": 236,
+      "reconciliation_queries": 59,
+      "event_reads": 492,
+      "repeated_event_reads": 12,
+      "stable_visibility_p50_ms": 27.1987,
+      "stable_visibility_p95_ms": 54.5935,
+      "stable_visibility_max_ms": 78.3185,
+      "oldest_missing_max_ms": 72.9787,
+      "observer_max_gap_ms": 178.8782
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r2-crash-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      45552,
+      46068
+    ],
+    "observer_pid": 64064,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1170.4383,
+    "metrics": {
+      "snapshot_transactions": 104,
+      "write_attempts": 100,
+      "regressions": 0,
+      "writes": 100,
+      "commit_path_ns": 164812300,
+      "ingest_transactions": 60,
+      "reminders": 235,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 31.6855,
+      "stable_visibility_p95_ms": 55.8748,
+      "stable_visibility_max_ms": 76.6128,
+      "oldest_missing_max_ms": 71.0096,
+      "observer_max_gap_ms": 171.7538
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-pause-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      9132,
+      53956
+    ],
+    "observer_pid": 10580,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1192.2223,
+    "metrics": {
+      "snapshot_transactions": 115,
+      "write_attempts": 98,
+      "regressions": 1,
+      "writes": 98,
+      "commit_path_ns": 133271900,
+      "ingest_transactions": 60,
+      "reminders": 225,
+      "reconciliation_queries": 59,
+      "event_reads": 662,
+      "repeated_event_reads": 182,
+      "stable_visibility_p50_ms": 38.6865,
+      "stable_visibility_p95_ms": 538.4116,
+      "stable_visibility_max_ms": 598.5741,
+      "oldest_missing_max_ms": 593.0491,
+      "observer_max_gap_ms": 164.1811
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-normal-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      12988,
+      51364
+    ],
+    "observer_pid": 63168,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1170.3243,
+    "metrics": {
+      "snapshot_transactions": 139,
+      "write_attempts": 108,
+      "regressions": 0,
+      "writes": 108,
+      "commit_path_ns": 195031500,
+      "ingest_transactions": 60,
+      "reminders": 229,
+      "reconciliation_queries": 59,
+      "event_reads": 481,
+      "repeated_event_reads": 1,
+      "stable_visibility_p50_ms": 21.1625,
+      "stable_visibility_p95_ms": 47.7045,
+      "stable_visibility_max_ms": 62.4791,
+      "oldest_missing_max_ms": 56.6603,
+      "observer_max_gap_ms": 181.5933
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-pause-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      28788,
+      10048
+    ],
+    "observer_pid": 55904,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.3193,
+    "metrics": {
+      "snapshot_transactions": 75,
+      "write_attempts": 73,
+      "regressions": 0,
+      "writes": 73,
+      "commit_path_ns": 109565100,
+      "ingest_transactions": 60,
+      "reminders": 258,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 46.9161,
+      "stable_visibility_p95_ms": 614.4741,
+      "stable_visibility_max_ms": 637.952,
+      "oldest_missing_max_ms": 632.4683,
+      "observer_max_gap_ms": 182.6329
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-normal-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      23556,
+      48296
+    ],
+    "observer_pid": 65016,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1170.0385,
+    "metrics": {
+      "renewal_transactions": 89,
+      "renewed_rows": 334,
+      "lease_reads": 102,
+      "lease_grant_transactions": 8,
+      "lease_grants": 8,
+      "snapshot_transactions": 102,
+      "write_attempts": 95,
+      "fence_checks": 95,
+      "regressions": 0,
+      "writes": 95,
+      "commit_path_ns": 142680800,
+      "ingest_transactions": 60,
+      "route_lease_queries": 85,
+      "reminders": 220,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 30.7506,
+      "stable_visibility_p95_ms": 55.805,
+      "stable_visibility_max_ms": 62.7065,
+      "oldest_missing_max_ms": 57.1604,
+      "observer_max_gap_ms": 183.4124
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-normal-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      42700,
+      38408
+    ],
+    "observer_pid": 62728,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1180.8274,
+    "metrics": {
+      "snapshot_transactions": 104,
+      "write_attempts": 97,
+      "regressions": 0,
+      "writes": 97,
+      "commit_path_ns": 145105600,
+      "ingest_transactions": 60,
+      "reminders": 222,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 29.5016,
+      "stable_visibility_p95_ms": 53.472,
+      "stable_visibility_max_ms": 70.9338,
+      "oldest_missing_max_ms": 65.382,
+      "observer_max_gap_ms": 173.2454
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-crash-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      18796,
+      51684
+    ],
+    "observer_pid": 60228,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1166.6911,
+    "metrics": {
+      "renewal_transactions": 51,
+      "renewed_rows": 308,
+      "lease_reads": 95,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 95,
+      "write_attempts": 84,
+      "fence_checks": 84,
+      "regressions": 0,
+      "writes": 84,
+      "commit_path_ns": 144084000,
+      "ingest_transactions": 60,
+      "route_lease_queries": 89,
+      "reminders": 242,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 37.1549,
+      "stable_visibility_p95_ms": 216.8209,
+      "stable_visibility_max_ms": 275.9817,
+      "oldest_missing_max_ms": 270.4719,
+      "observer_max_gap_ms": 165.2807
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-pause-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      58400,
+      42556
+    ],
+    "observer_pid": 4020,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1177.358,
+    "metrics": {
+      "snapshot_transactions": 73,
+      "write_attempts": 71,
+      "progress_checks": 71,
+      "regressions": 0,
+      "writes": 71,
+      "commit_path_ns": 124704400,
+      "ingest_transactions": 60,
+      "reminders": 250,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 60.5812,
+      "stable_visibility_p95_ms": 617.4378,
+      "stable_visibility_max_ms": 655.1949,
+      "oldest_missing_max_ms": 649.499,
+      "observer_max_gap_ms": 185.843
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-pause-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      7340,
+      23012
+    ],
+    "observer_pid": 11904,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1185.0271,
+    "metrics": {
+      "renewal_transactions": 77,
+      "renewed_rows": 316,
+      "lease_reads": 94,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 91,
+      "write_attempts": 90,
+      "fence_checks": 90,
+      "regressions": 0,
+      "writes": 89,
+      "commit_path_ns": 80436000,
+      "rejected_writes": 1,
+      "ingest_transactions": 60,
+      "route_lease_queries": 86,
+      "reminders": 231,
+      "reconciliation_queries": 59,
+      "event_reads": 499,
+      "repeated_event_reads": 19,
+      "stable_visibility_p50_ms": 30.6053,
+      "stable_visibility_p95_ms": 199.5242,
+      "stable_visibility_max_ms": 256.3577,
+      "oldest_missing_max_ms": 250.701,
+      "observer_max_gap_ms": 168.2511
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-pause-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      58304,
+      55684
+    ],
+    "observer_pid": 37688,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.7196,
+    "metrics": {
+      "snapshot_transactions": 120,
+      "write_attempts": 96,
+      "progress_checks": 96,
+      "regressions": 0,
+      "writes": 95,
+      "commit_path_ns": 137363600,
+      "superseded_writes": 1,
+      "ingest_transactions": 60,
+      "reminders": 247,
+      "reconciliation_queries": 59,
+      "event_reads": 487,
+      "repeated_event_reads": 7,
+      "stable_visibility_p50_ms": 30.8725,
+      "stable_visibility_p95_ms": 82.4489,
+      "stable_visibility_max_ms": 181.1242,
+      "oldest_missing_max_ms": 175.6883,
+      "observer_max_gap_ms": 167.6057
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-crash-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      59780,
+      65608
+    ],
+    "observer_pid": 34444,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.5084,
+    "metrics": {
+      "snapshot_transactions": 104,
+      "write_attempts": 96,
+      "regressions": 0,
+      "writes": 96,
+      "commit_path_ns": 164376500,
+      "ingest_transactions": 60,
+      "reminders": 232,
+      "reconciliation_queries": 59,
+      "event_reads": 492,
+      "repeated_event_reads": 12,
+      "stable_visibility_p50_ms": 32.6689,
+      "stable_visibility_p95_ms": 60.3324,
+      "stable_visibility_max_ms": 72.5712,
+      "oldest_missing_max_ms": 66.952,
+      "observer_max_gap_ms": 164.3443
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-normal-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      65696,
+      64684
+    ],
+    "observer_pid": 55556,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1179.978,
+    "metrics": {
+      "snapshot_transactions": 101,
+      "write_attempts": 98,
+      "progress_checks": 98,
+      "regressions": 0,
+      "writes": 98,
+      "commit_path_ns": 178076700,
+      "ingest_transactions": 60,
+      "reminders": 230,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 32.4137,
+      "stable_visibility_p95_ms": 55.2363,
+      "stable_visibility_max_ms": 63.381,
+      "oldest_missing_max_ms": 57.906,
+      "observer_max_gap_ms": 175.8762
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-crash-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      58296,
+      54240
+    ],
+    "observer_pid": 41144,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1179.1665,
+    "metrics": {
+      "snapshot_transactions": 114,
+      "write_attempts": 96,
+      "regressions": 0,
+      "writes": 96,
+      "commit_path_ns": 141072300,
+      "ingest_transactions": 60,
+      "reminders": 240,
+      "reconciliation_queries": 59,
+      "event_reads": 501,
+      "repeated_event_reads": 21,
+      "stable_visibility_p50_ms": 31.5021,
+      "stable_visibility_p95_ms": 51.8235,
+      "stable_visibility_max_ms": 109.8087,
+      "oldest_missing_max_ms": 104.4768,
+      "observer_max_gap_ms": 177.2443
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-crash-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      36060,
+      49560
+    ],
+    "observer_pid": 15796,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1167.8997,
+    "metrics": {
+      "renewal_transactions": 51,
+      "renewed_rows": 305,
+      "lease_reads": 91,
+      "lease_grant_transactions": 13,
+      "lease_grants": 13,
+      "snapshot_transactions": 87,
+      "write_attempts": 85,
+      "fence_checks": 85,
+      "regressions": 0,
+      "writes": 85,
+      "commit_path_ns": 126082000,
+      "ingest_transactions": 60,
+      "route_lease_queries": 86,
+      "reminders": 223,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 31.0476,
+      "stable_visibility_p95_ms": 186.4092,
+      "stable_visibility_max_ms": 256.1229,
+      "oldest_missing_max_ms": 250.7662,
+      "observer_max_gap_ms": 171.2589
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-pause-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      47524,
+      60668
+    ],
+    "observer_pid": 56784,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1175.1891,
+    "metrics": {
+      "renewal_transactions": 80,
+      "renewed_rows": 318,
+      "lease_reads": 100,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 91,
+      "write_attempts": 89,
+      "fence_checks": 89,
+      "regressions": 0,
+      "writes": 88,
+      "commit_path_ns": 131865500,
+      "rejected_writes": 1,
+      "ingest_transactions": 60,
+      "route_lease_queries": 90,
+      "reminders": 248,
+      "reconciliation_queries": 59,
+      "event_reads": 492,
+      "repeated_event_reads": 12,
+      "stable_visibility_p50_ms": 33.5774,
+      "stable_visibility_p95_ms": 227.6292,
+      "stable_visibility_max_ms": 287.7961,
+      "oldest_missing_max_ms": 282.523,
+      "observer_max_gap_ms": 170.869
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-crash-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      65956,
+      43032
+    ],
+    "observer_pid": 49980,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1175.8906,
+    "metrics": {
+      "snapshot_transactions": 94,
+      "write_attempts": 89,
+      "progress_checks": 89,
+      "regressions": 0,
+      "writes": 89,
+      "commit_path_ns": 138201500,
+      "ingest_transactions": 60,
+      "reminders": 225,
+      "reconciliation_queries": 59,
+      "event_reads": 499,
+      "repeated_event_reads": 19,
+      "stable_visibility_p50_ms": 31.2262,
+      "stable_visibility_p95_ms": 67.9472,
+      "stable_visibility_max_ms": 126.8891,
+      "oldest_missing_max_ms": 121.5709,
+      "observer_max_gap_ms": 163.6561
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-normal-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      62664,
+      66912
+    ],
+    "observer_pid": 46404,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.7888,
+    "metrics": {
+      "snapshot_transactions": 149,
+      "write_attempts": 115,
+      "progress_checks": 115,
+      "regressions": 0,
+      "writes": 114,
+      "commit_path_ns": 202389700,
+      "superseded_writes": 1,
+      "ingest_transactions": 60,
+      "reminders": 228,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 19.6319,
+      "stable_visibility_p95_ms": 50.5971,
+      "stable_visibility_max_ms": 60.1615,
+      "oldest_missing_max_ms": 54.9345,
+      "observer_max_gap_ms": 170.2884
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-crash-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      20768,
+      5236
+    ],
+    "observer_pid": 52004,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.5723,
+    "metrics": {
+      "snapshot_transactions": 114,
+      "write_attempts": 101,
+      "progress_checks": 101,
+      "regressions": 0,
+      "writes": 101,
+      "commit_path_ns": 121814800,
+      "ingest_transactions": 60,
+      "reminders": 235,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 27.1643,
+      "stable_visibility_p95_ms": 50.1101,
+      "stable_visibility_max_ms": 56.0433,
+      "oldest_missing_max_ms": 50.67,
+      "observer_max_gap_ms": 179.9125
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r3-normal-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      63700,
+      22164
+    ],
+    "observer_pid": 59804,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.7282,
+    "metrics": {
+      "renewal_transactions": 92,
+      "renewed_rows": 346,
+      "lease_reads": 103,
+      "lease_grant_transactions": 8,
+      "lease_grants": 8,
+      "snapshot_transactions": 97,
+      "write_attempts": 95,
+      "fence_checks": 95,
+      "regressions": 0,
+      "writes": 95,
+      "commit_path_ns": 120883000,
+      "ingest_transactions": 60,
+      "route_lease_queries": 89,
+      "reminders": 224,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 25.5493,
+      "stable_visibility_p95_ms": 50.8318,
+      "stable_visibility_max_ms": 65.5842,
+      "oldest_missing_max_ms": 59.8727,
+      "observer_max_gap_ms": 164.9893
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-pause-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      58188,
+      57636
+    ],
+    "observer_pid": 59100,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1167.5858,
+    "metrics": {
+      "snapshot_transactions": 69,
+      "write_attempts": 68,
+      "regressions": 0,
+      "writes": 68,
+      "commit_path_ns": 94922300,
+      "ingest_transactions": 60,
+      "reminders": 257,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 45.5641,
+      "stable_visibility_p95_ms": 612.2989,
+      "stable_visibility_max_ms": 633.5707,
+      "oldest_missing_max_ms": 628.1017,
+      "observer_max_gap_ms": 161.2066
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-pause-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      66308,
+      22980
+    ],
+    "observer_pid": 17712,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1178.4877,
+    "metrics": {
+      "snapshot_transactions": 108,
+      "write_attempts": 94,
+      "regressions": 1,
+      "writes": 94,
+      "commit_path_ns": 183775500,
+      "ingest_transactions": 60,
+      "reminders": 247,
+      "reconciliation_queries": 59,
+      "event_reads": 674,
+      "repeated_event_reads": 194,
+      "stable_visibility_p50_ms": 54.4348,
+      "stable_visibility_p95_ms": 577.405,
+      "stable_visibility_max_ms": 638.4728,
+      "oldest_missing_max_ms": 633.2224,
+      "observer_max_gap_ms": 168.4836
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-normal-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      58440,
+      62972
+    ],
+    "observer_pid": 58644,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1178.6014,
+    "metrics": {
+      "renewal_transactions": 92,
+      "renewed_rows": 346,
+      "lease_reads": 101,
+      "lease_grant_transactions": 8,
+      "lease_grants": 8,
+      "snapshot_transactions": 98,
+      "write_attempts": 95,
+      "fence_checks": 95,
+      "regressions": 0,
+      "writes": 95,
+      "commit_path_ns": 133480900,
+      "ingest_transactions": 60,
+      "route_lease_queries": 90,
+      "reminders": 225,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 28.5263,
+      "stable_visibility_p95_ms": 50.2035,
+      "stable_visibility_max_ms": 68.1843,
+      "oldest_missing_max_ms": 62.6113,
+      "observer_max_gap_ms": 173.1723
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-normal-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      36132,
+      12516
+    ],
+    "observer_pid": 45288,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1178.3658,
+    "metrics": {
+      "snapshot_transactions": 146,
+      "write_attempts": 112,
+      "regressions": 2,
+      "writes": 112,
+      "commit_path_ns": 205056600,
+      "ingest_transactions": 60,
+      "reminders": 227,
+      "reconciliation_queries": 59,
+      "event_reads": 521,
+      "repeated_event_reads": 41,
+      "stable_visibility_p50_ms": 21.3191,
+      "stable_visibility_p95_ms": 54.2309,
+      "stable_visibility_max_ms": 68.9421,
+      "oldest_missing_max_ms": 63.5471,
+      "observer_max_gap_ms": 177.6263
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-normal-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      46100,
+      32532
+    ],
+    "observer_pid": 51008,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.2604,
+    "metrics": {
+      "snapshot_transactions": 101,
+      "write_attempts": 99,
+      "regressions": 0,
+      "writes": 99,
+      "commit_path_ns": 125707100,
+      "ingest_transactions": 60,
+      "reminders": 221,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 27.5297,
+      "stable_visibility_p95_ms": 50.3656,
+      "stable_visibility_max_ms": 57.954,
+      "oldest_missing_max_ms": 52.6195,
+      "observer_max_gap_ms": 177.4977
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-crash-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      62876,
+      56612
+    ],
+    "observer_pid": 35568,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.6269,
+    "metrics": {
+      "snapshot_transactions": 103,
+      "write_attempts": 99,
+      "progress_checks": 99,
+      "regressions": 0,
+      "writes": 99,
+      "commit_path_ns": 124168200,
+      "ingest_transactions": 60,
+      "reminders": 235,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 29.6489,
+      "stable_visibility_p95_ms": 49.4223,
+      "stable_visibility_max_ms": 100.3392,
+      "oldest_missing_max_ms": 94.9897,
+      "observer_max_gap_ms": 166.0928
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-pause-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      58536,
+      65824
+    ],
+    "observer_pid": 62348,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1178.5908,
+    "metrics": {
+      "renewal_transactions": 83,
+      "renewed_rows": 334,
+      "lease_reads": 95,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 92,
+      "write_attempts": 89,
+      "fence_checks": 89,
+      "regressions": 0,
+      "writes": 88,
+      "commit_path_ns": 101657600,
+      "rejected_writes": 1,
+      "ingest_transactions": 60,
+      "route_lease_queries": 86,
+      "reminders": 222,
+      "reconciliation_queries": 59,
+      "event_reads": 492,
+      "repeated_event_reads": 12,
+      "stable_visibility_p50_ms": 33.1848,
+      "stable_visibility_p95_ms": 226.0551,
+      "stable_visibility_max_ms": 285.314,
+      "oldest_missing_max_ms": 279.8737,
+      "observer_max_gap_ms": 179.2081
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-normal-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      11084,
+      50232
+    ],
+    "observer_pid": 9596,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1179.5454,
+    "metrics": {
+      "snapshot_transactions": 135,
+      "write_attempts": 108,
+      "progress_checks": 108,
+      "regressions": 0,
+      "writes": 108,
+      "commit_path_ns": 109514900,
+      "ingest_transactions": 60,
+      "reminders": 215,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 21.3943,
+      "stable_visibility_p95_ms": 43.6056,
+      "stable_visibility_max_ms": 53.9811,
+      "oldest_missing_max_ms": 48.6788,
+      "observer_max_gap_ms": 169.6228
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-crash-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      66348,
+      64356
+    ],
+    "observer_pid": 54912,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.2644,
+    "metrics": {
+      "renewal_transactions": 53,
+      "renewed_rows": 319,
+      "lease_reads": 90,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 90,
+      "write_attempts": 86,
+      "fence_checks": 86,
+      "regressions": 0,
+      "writes": 86,
+      "commit_path_ns": 75798300,
+      "ingest_transactions": 60,
+      "route_lease_queries": 87,
+      "reminders": 227,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 31.4577,
+      "stable_visibility_p95_ms": 241.2869,
+      "stable_visibility_max_ms": 305.8274,
+      "oldest_missing_max_ms": 300.2096,
+      "observer_max_gap_ms": 167.5521
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-pause-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      44020,
+      12540
+    ],
+    "observer_pid": 38492,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1178.9253,
+    "metrics": {
+      "renewal_transactions": 81,
+      "renewed_rows": 324,
+      "lease_reads": 99,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 93,
+      "write_attempts": 88,
+      "fence_checks": 88,
+      "regressions": 0,
+      "writes": 87,
+      "commit_path_ns": 103814400,
+      "rejected_writes": 1,
+      "ingest_transactions": 60,
+      "route_lease_queries": 86,
+      "reminders": 229,
+      "reconciliation_queries": 59,
+      "event_reads": 492,
+      "repeated_event_reads": 12,
+      "stable_visibility_p50_ms": 32.1615,
+      "stable_visibility_p95_ms": 227.9056,
+      "stable_visibility_max_ms": 287.5001,
+      "oldest_missing_max_ms": 282.1997,
+      "observer_max_gap_ms": 178.6092
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-crash-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      1304,
+      52396
+    ],
+    "observer_pid": 61420,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.5417,
+    "metrics": {
+      "renewal_transactions": 53,
+      "renewed_rows": 321,
+      "lease_reads": 96,
+      "lease_grant_transactions": 11,
+      "lease_grants": 11,
+      "snapshot_transactions": 91,
+      "write_attempts": 87,
+      "fence_checks": 87,
+      "regressions": 0,
+      "writes": 87,
+      "commit_path_ns": 83150200,
+      "ingest_transactions": 60,
+      "route_lease_queries": 86,
+      "reminders": 227,
+      "reconciliation_queries": 59,
+      "event_reads": 499,
+      "repeated_event_reads": 19,
+      "stable_visibility_p50_ms": 35.39675,
+      "stable_visibility_p95_ms": 228.8235,
+      "stable_visibility_max_ms": 288.7917,
+      "oldest_missing_max_ms": 283.4275,
+      "observer_max_gap_ms": 172.9995
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-normal-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      63220,
+      56056
+    ],
+    "observer_pid": 33280,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.587,
+    "metrics": {
+      "renewal_transactions": 91,
+      "renewed_rows": 343,
+      "lease_reads": 103,
+      "lease_grant_transactions": 8,
+      "lease_grants": 8,
+      "snapshot_transactions": 103,
+      "write_attempts": 99,
+      "fence_checks": 99,
+      "regressions": 0,
+      "writes": 99,
+      "commit_path_ns": 152576100,
+      "ingest_transactions": 60,
+      "route_lease_queries": 90,
+      "reminders": 227,
+      "reconciliation_queries": 58,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 25.5903,
+      "stable_visibility_p95_ms": 67.2448,
+      "stable_visibility_max_ms": 73.2482,
+      "oldest_missing_max_ms": 68.0622,
+      "observer_max_gap_ms": 169.8208
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-crash-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      65720,
+      63948
+    ],
+    "observer_pid": 47824,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1189.7816,
+    "metrics": {
+      "snapshot_transactions": 115,
+      "write_attempts": 98,
+      "progress_checks": 98,
+      "regressions": 0,
+      "writes": 98,
+      "commit_path_ns": 153260800,
+      "ingest_transactions": 60,
+      "reminders": 230,
+      "reconciliation_queries": 59,
+      "event_reads": 499,
+      "repeated_event_reads": 19,
+      "stable_visibility_p50_ms": 30.8118,
+      "stable_visibility_p95_ms": 58.0772,
+      "stable_visibility_max_ms": 80.6313,
+      "oldest_missing_max_ms": 75.2493,
+      "observer_max_gap_ms": 168.4102
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-crash-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      64700,
+      54816
+    ],
+    "observer_pid": 7396,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1168.2696,
+    "metrics": {
+      "snapshot_transactions": 114,
+      "write_attempts": 99,
+      "regressions": 0,
+      "writes": 99,
+      "commit_path_ns": 117500300,
+      "ingest_transactions": 60,
+      "reminders": 226,
+      "reconciliation_queries": 59,
+      "event_reads": 495,
+      "repeated_event_reads": 15,
+      "stable_visibility_p50_ms": 25.7066,
+      "stable_visibility_p95_ms": 48.6514,
+      "stable_visibility_max_ms": 89.5861,
+      "oldest_missing_max_ms": 84.4067,
+      "observer_max_gap_ms": 166.9368
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-pause-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      58824,
+      62116
+    ],
+    "observer_pid": 36628,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1167.2977,
+    "metrics": {
+      "snapshot_transactions": 116,
+      "write_attempts": 92,
+      "progress_checks": 92,
+      "regressions": 0,
+      "writes": 91,
+      "commit_path_ns": 164474200,
+      "superseded_writes": 1,
+      "ingest_transactions": 60,
+      "reminders": 241,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 30.4377,
+      "stable_visibility_p95_ms": 95.6271,
+      "stable_visibility_max_ms": 142.2236,
+      "oldest_missing_max_ms": 136.9005,
+      "observer_max_gap_ms": 174.5216
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-normal-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      62540,
+      27392
+    ],
+    "observer_pid": 52784,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1178.6993,
+    "metrics": {
+      "snapshot_transactions": 100,
+      "write_attempts": 96,
+      "progress_checks": 96,
+      "regressions": 0,
+      "writes": 96,
+      "commit_path_ns": 144591100,
+      "ingest_transactions": 60,
+      "reminders": 226,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 28.9768,
+      "stable_visibility_p95_ms": 49.5792,
+      "stable_visibility_max_ms": 54.8349,
+      "oldest_missing_max_ms": 49.538,
+      "observer_max_gap_ms": 178.077
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-crash-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      53044,
+      50796
+    ],
+    "observer_pid": 27176,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1168.6465,
+    "metrics": {
+      "snapshot_transactions": 104,
+      "write_attempts": 99,
+      "regressions": 0,
+      "writes": 99,
+      "commit_path_ns": 128760300,
+      "ingest_transactions": 60,
+      "reminders": 229,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 26.7897,
+      "stable_visibility_p95_ms": 58.6251,
+      "stable_visibility_max_ms": 103.0356,
+      "oldest_missing_max_ms": 97.6221,
+      "observer_max_gap_ms": 160.7392
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r4-pause-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      56812,
+      65084
+    ],
+    "observer_pid": 60976,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1168.8169,
+    "metrics": {
+      "snapshot_transactions": 73,
+      "write_attempts": 72,
+      "progress_checks": 72,
+      "regressions": 0,
+      "writes": 72,
+      "commit_path_ns": 116300600,
+      "ingest_transactions": 60,
+      "reminders": 259,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 52.3623,
+      "stable_visibility_p95_ms": 610.055,
+      "stable_visibility_max_ms": 635.1907,
+      "oldest_missing_max_ms": 629.6699,
+      "observer_max_gap_ms": 163.0162
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-normal-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      64604,
+      59120
+    ],
+    "observer_pid": 50592,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.6711,
+    "metrics": {
+      "snapshot_transactions": 144,
+      "write_attempts": 110,
+      "regressions": 0,
+      "writes": 110,
+      "commit_path_ns": 144646200,
+      "ingest_transactions": 60,
+      "reminders": 219,
+      "reconciliation_queries": 59,
+      "event_reads": 481,
+      "repeated_event_reads": 1,
+      "stable_visibility_p50_ms": 21.4576,
+      "stable_visibility_p95_ms": 43.0378,
+      "stable_visibility_max_ms": 61.1865,
+      "oldest_missing_max_ms": 55.8493,
+      "observer_max_gap_ms": 173.0802
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-normal-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      38816,
+      22664
+    ],
+    "observer_pid": 59592,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1180.1403,
+    "metrics": {
+      "renewal_transactions": 87,
+      "renewed_rows": 327,
+      "lease_reads": 109,
+      "lease_grant_transactions": 8,
+      "lease_grants": 8,
+      "snapshot_transactions": 105,
+      "write_attempts": 98,
+      "fence_checks": 98,
+      "regressions": 0,
+      "writes": 98,
+      "commit_path_ns": 155753000,
+      "ingest_transactions": 60,
+      "route_lease_queries": 91,
+      "reminders": 244,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 28.6885,
+      "stable_visibility_p95_ms": 61.2951,
+      "stable_visibility_max_ms": 67.176,
+      "oldest_missing_max_ms": 61.4447,
+      "observer_max_gap_ms": 184.8891
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-pause-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      45632,
+      29940
+    ],
+    "observer_pid": 66716,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.5491,
+    "metrics": {
+      "snapshot_transactions": 75,
+      "write_attempts": 69,
+      "progress_checks": 69,
+      "regressions": 0,
+      "writes": 69,
+      "commit_path_ns": 118119100,
+      "ingest_transactions": 60,
+      "reminders": 266,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 54.6587,
+      "stable_visibility_p95_ms": 622.7684,
+      "stable_visibility_max_ms": 655.4195,
+      "oldest_missing_max_ms": 649.9374,
+      "observer_max_gap_ms": 170.5949
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-crash-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      63572,
+      9952
+    ],
+    "observer_pid": 63848,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1167.5536,
+    "metrics": {
+      "snapshot_transactions": 100,
+      "write_attempts": 97,
+      "progress_checks": 97,
+      "regressions": 0,
+      "writes": 97,
+      "commit_path_ns": 147203700,
+      "ingest_transactions": 60,
+      "reminders": 225,
+      "reconciliation_queries": 59,
+      "event_reads": 499,
+      "repeated_event_reads": 19,
+      "stable_visibility_p50_ms": 29.3866,
+      "stable_visibility_p95_ms": 58.9553,
+      "stable_visibility_max_ms": 103.4706,
+      "oldest_missing_max_ms": 97.88,
+      "observer_max_gap_ms": 167.0555
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-pause-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      57364,
+      42700
+    ],
+    "observer_pid": 14564,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1178.1483,
+    "metrics": {
+      "renewal_transactions": 80,
+      "renewed_rows": 318,
+      "lease_reads": 96,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 92,
+      "write_attempts": 88,
+      "fence_checks": 88,
+      "regressions": 0,
+      "writes": 87,
+      "commit_path_ns": 119927300,
+      "rejected_writes": 1,
+      "ingest_transactions": 60,
+      "route_lease_queries": 90,
+      "reminders": 242,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 35.299499999999995,
+      "stable_visibility_p95_ms": 259.858,
+      "stable_visibility_max_ms": 319.3934,
+      "oldest_missing_max_ms": 313.7955,
+      "observer_max_gap_ms": 164.3456
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-crash-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      64516,
+      42536
+    ],
+    "observer_pid": 24820,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1177.0661,
+    "metrics": {
+      "snapshot_transactions": 115,
+      "write_attempts": 99,
+      "regressions": 0,
+      "writes": 99,
+      "commit_path_ns": 153390300,
+      "ingest_transactions": 60,
+      "reminders": 227,
+      "reconciliation_queries": 59,
+      "event_reads": 493,
+      "repeated_event_reads": 13,
+      "stable_visibility_p50_ms": 28.8597,
+      "stable_visibility_p95_ms": 50.8334,
+      "stable_visibility_max_ms": 131.4271,
+      "oldest_missing_max_ms": 126.0311,
+      "observer_max_gap_ms": 175.9784
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-pause-round_robin-overlap",
+    "strategy": "overlap",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      2464,
+      54404
+    ],
+    "observer_pid": 51752,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.2608,
+    "metrics": {
+      "snapshot_transactions": 118,
+      "write_attempts": 102,
+      "regressions": 1,
+      "writes": 102,
+      "commit_path_ns": 192899600,
+      "ingest_transactions": 60,
+      "reminders": 254,
+      "reconciliation_queries": 59,
+      "event_reads": 674,
+      "repeated_event_reads": 194,
+      "stable_visibility_p50_ms": 46.653,
+      "stable_visibility_p95_ms": 565.9434,
+      "stable_visibility_max_ms": 619.7326,
+      "oldest_missing_max_ms": 614.0265,
+      "observer_max_gap_ms": 174.4856
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-normal-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      46324,
+      54528
+    ],
+    "observer_pid": 28088,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1168.0222,
+    "metrics": {
+      "renewal_transactions": 90,
+      "renewed_rows": 340,
+      "lease_reads": 104,
+      "lease_grant_transactions": 8,
+      "lease_grants": 8,
+      "snapshot_transactions": 104,
+      "write_attempts": 98,
+      "fence_checks": 98,
+      "regressions": 0,
+      "writes": 98,
+      "commit_path_ns": 112144900,
+      "ingest_transactions": 60,
+      "route_lease_queries": 88,
+      "reminders": 225,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 28.03915,
+      "stable_visibility_p95_ms": 45.629,
+      "stable_visibility_max_ms": 57.6758,
+      "oldest_missing_max_ms": 52.1622,
+      "observer_max_gap_ms": 165.8823
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-crash-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      53364,
+      60836
+    ],
+    "observer_pid": 58304,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.1174,
+    "metrics": {
+      "renewal_transactions": 53,
+      "renewed_rows": 320,
+      "lease_reads": 93,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 88,
+      "write_attempts": 86,
+      "fence_checks": 86,
+      "regressions": 0,
+      "writes": 86,
+      "commit_path_ns": 119718800,
+      "ingest_transactions": 60,
+      "route_lease_queries": 89,
+      "reminders": 236,
+      "reconciliation_queries": 59,
+      "event_reads": 492,
+      "repeated_event_reads": 12,
+      "stable_visibility_p50_ms": 31.7897,
+      "stable_visibility_p95_ms": 228.7093,
+      "stable_visibility_max_ms": 288.8057,
+      "oldest_missing_max_ms": 282.9349,
+      "observer_max_gap_ms": 163.8043
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-pause-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      32064,
+      50104
+    ],
+    "observer_pid": 66108,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1177.0454,
+    "metrics": {
+      "snapshot_transactions": 73,
+      "write_attempts": 71,
+      "regressions": 0,
+      "writes": 71,
+      "commit_path_ns": 116801600,
+      "ingest_transactions": 60,
+      "reminders": 260,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 54.9686,
+      "stable_visibility_p95_ms": 609.5054,
+      "stable_visibility_max_ms": 646.3663,
+      "oldest_missing_max_ms": 641.123,
+      "observer_max_gap_ms": 182.446
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-normal-sticky-guarded",
+    "strategy": "guarded",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      30504,
+      66516
+    ],
+    "observer_pid": 61000,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1168.2875,
+    "metrics": {
+      "snapshot_transactions": 98,
+      "write_attempts": 94,
+      "progress_checks": 94,
+      "regressions": 0,
+      "writes": 94,
+      "commit_path_ns": 180677200,
+      "ingest_transactions": 60,
+      "reminders": 219,
+      "reconciliation_queries": 58,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 28.37315,
+      "stable_visibility_p95_ms": 51.4381,
+      "stable_visibility_max_ms": 64.3082,
+      "oldest_missing_max_ms": 58.6527,
+      "observer_max_gap_ms": 174.8454
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-crash-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      54824,
+      59708
+    ],
+    "observer_pid": 41144,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1168.51,
+    "metrics": {
+      "snapshot_transactions": 117,
+      "write_attempts": 104,
+      "progress_checks": 104,
+      "regressions": 0,
+      "writes": 104,
+      "commit_path_ns": 145109400,
+      "ingest_transactions": 60,
+      "reminders": 232,
+      "reconciliation_queries": 59,
+      "event_reads": 493,
+      "repeated_event_reads": 13,
+      "stable_visibility_p50_ms": 26.3697,
+      "stable_visibility_p95_ms": 48.4071,
+      "stable_visibility_max_ms": 70.4198,
+      "oldest_missing_max_ms": 65.0733,
+      "observer_max_gap_ms": 183.2984
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-pause-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      4232,
+      51100
+    ],
+    "observer_pid": 47048,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1169.7284,
+    "metrics": {
+      "snapshot_transactions": 115,
+      "write_attempts": 96,
+      "progress_checks": 96,
+      "regressions": 0,
+      "writes": 95,
+      "commit_path_ns": 124008000,
+      "superseded_writes": 1,
+      "ingest_transactions": 60,
+      "reminders": 242,
+      "reconciliation_queries": 59,
+      "event_reads": 499,
+      "repeated_event_reads": 19,
+      "stable_visibility_p50_ms": 28.07255,
+      "stable_visibility_p95_ms": 78.9593,
+      "stable_visibility_max_ms": 223.6238,
+      "oldest_missing_max_ms": 218.0479,
+      "observer_max_gap_ms": 190.0012
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-normal-round_robin-guarded",
+    "strategy": "guarded",
+    "routing": "round_robin",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      10072,
+      58724
+    ],
+    "observer_pid": 15796,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1167.0776,
+    "metrics": {
+      "snapshot_transactions": 135,
+      "write_attempts": 108,
+      "progress_checks": 108,
+      "regressions": 0,
+      "writes": 107,
+      "commit_path_ns": 164471400,
+      "superseded_writes": 1,
+      "ingest_transactions": 60,
+      "reminders": 216,
+      "reconciliation_queries": 59,
+      "event_reads": 506,
+      "repeated_event_reads": 26,
+      "stable_visibility_p50_ms": 23.2735,
+      "stable_visibility_p95_ms": 46.0207,
+      "stable_visibility_max_ms": 64.9807,
+      "oldest_missing_max_ms": 59.5667,
+      "observer_max_gap_ms": 179.1491
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-pause-round_robin-owned",
+    "strategy": "owned",
+    "routing": "round_robin",
+    "scenario": "pause",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      53780,
+      52108
+    ],
+    "observer_pid": 17716,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1167.0379,
+    "metrics": {
+      "renewal_transactions": 77,
+      "renewed_rows": 312,
+      "lease_reads": 103,
+      "lease_grant_transactions": 13,
+      "lease_grants": 13,
+      "snapshot_transactions": 94,
+      "write_attempts": 90,
+      "fence_checks": 90,
+      "regressions": 0,
+      "writes": 89,
+      "commit_path_ns": 78622100,
+      "rejected_writes": 1,
+      "ingest_transactions": 60,
+      "route_lease_queries": 88,
+      "reminders": 232,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 30.8728,
+      "stable_visibility_p95_ms": 202.9206,
+      "stable_visibility_max_ms": 262.6729,
+      "oldest_missing_max_ms": 257.0956,
+      "observer_max_gap_ms": 182.7509
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-crash-sticky-owned",
+    "strategy": "owned",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      53508,
+      63428
+    ],
+    "observer_pid": 45140,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1175.2275,
+    "metrics": {
+      "renewal_transactions": 52,
+      "renewed_rows": 319,
+      "lease_reads": 97,
+      "lease_grant_transactions": 12,
+      "lease_grants": 12,
+      "snapshot_transactions": 97,
+      "write_attempts": 92,
+      "fence_checks": 92,
+      "regressions": 0,
+      "writes": 92,
+      "commit_path_ns": 100372700,
+      "ingest_transactions": 60,
+      "route_lease_queries": 89,
+      "reminders": 239,
+      "reconciliation_queries": 59,
+      "event_reads": 494,
+      "repeated_event_reads": 14,
+      "stable_visibility_p50_ms": 31.968799999999998,
+      "stable_visibility_p95_ms": 217.3696,
+      "stable_visibility_max_ms": 275.7629,
+      "oldest_missing_max_ms": 270.2614,
+      "observer_max_gap_ms": 177.0884
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-crash-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "crash",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      23352,
+      48552
+    ],
+    "observer_pid": 6808,
+    "worker_exits": [
+      73,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1174.6125,
+    "metrics": {
+      "snapshot_transactions": 99,
+      "write_attempts": 93,
+      "regressions": 0,
+      "writes": 93,
+      "commit_path_ns": 112158200,
+      "ingest_transactions": 60,
+      "reminders": 224,
+      "reconciliation_queries": 59,
+      "event_reads": 499,
+      "repeated_event_reads": 19,
+      "stable_visibility_p50_ms": 27.6814,
+      "stable_visibility_p95_ms": 50.6698,
+      "stable_visibility_max_ms": 67.204,
+      "oldest_missing_max_ms": 61.6722,
+      "observer_max_gap_ms": 173.0905
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  },
+  {
+    "run": "r5-normal-sticky-overlap",
+    "strategy": "overlap",
+    "routing": "sticky",
+    "scenario": "normal",
+    "settings": {
+      "counters": 8,
+      "batches": 60,
+      "batch_size": 8,
+      "batch_ms": 20,
+      "rollup_ms": 40,
+      "reconcile_ms": 40,
+      "lease_ms": 250,
+      "renew_ms": 50,
+      "fault_after_events": 160,
+      "pause_ms": 600,
+      "observe_ms": 5,
+      "settle_ms": 1200,
+      "seed": 42
+    },
+    "worker_pids": [
+      57064,
+      11400
+    ],
+    "observer_pid": 65284,
+    "worker_exits": [
+      0,
+      0
+    ],
+    "accepted_events": 480,
+    "input_span_ms": 1176.8753,
+    "metrics": {
+      "snapshot_transactions": 103,
+      "write_attempts": 96,
+      "regressions": 0,
+      "writes": 96,
+      "commit_path_ns": 192810000,
+      "ingest_transactions": 60,
+      "reminders": 232,
+      "reconciliation_queries": 59,
+      "event_reads": 480,
+      "repeated_event_reads": 0,
+      "stable_visibility_p50_ms": 27.5019,
+      "stable_visibility_p95_ms": 57.6032,
+      "stable_visibility_max_ms": 71.297,
+      "oldest_missing_max_ms": 65.5725,
+      "observer_max_gap_ms": 168.3031
+    },
+    "final": [
+      [
+        0,
+        384,
+        480,
+        480,
+        384
+      ],
+      [
+        1,
+        17,
+        443,
+        443,
+        17
+      ],
+      [
+        2,
+        17,
+        433,
+        433,
+        17
+      ],
+      [
+        3,
+        16,
+        464,
+        464,
+        16
+      ],
+      [
+        4,
+        13,
+        463,
+        463,
+        13
+      ],
+      [
+        5,
+        8,
+        417,
+        417,
+        8
+      ],
+      [
+        6,
+        10,
+        465,
+        465,
+        10
+      ],
+      [
+        7,
+        15,
+        458,
+        458,
+        15
+      ]
+    ],
+    "correctness": "All committed prefixes match event log; final totals converge"
+  }
+]

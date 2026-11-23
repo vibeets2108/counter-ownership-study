@@ -1,0 +1,109 @@
+{
+  "strategy": "guarded",
+  "routing": "round_robin",
+  "scenario": "pause",
+  "settings": {
+    "counters": 8,
+    "batches": 60,
+    "batch_size": 8,
+    "batch_ms": 20,
+    "rollup_ms": 40,
+    "reconcile_ms": 40,
+    "lease_ms": 250,
+    "renew_ms": 50,
+    "fault_after_events": 160,
+    "pause_ms": 600,
+    "observe_ms": 5,
+    "settle_ms": 1200,
+    "seed": 42
+  },
+  "worker_pids": [
+    60560,
+    59300
+  ],
+  "observer_pid": 38036,
+  "worker_exits": [
+    0,
+    0
+  ],
+  "accepted_events": 480,
+  "input_span_ms": 1183.1457,
+  "metrics": {
+    "snapshot_transactions": 120,
+    "write_attempts": 92,
+    "progress_checks": 92,
+    "regressions": 0,
+    "writes": 91,
+    "commit_path_ns": 114927200,
+    "superseded_writes": 1,
+    "ingest_transactions": 60,
+    "reminders": 236,
+    "reconciliation_queries": 59,
+    "event_reads": 485,
+    "repeated_event_reads": 5,
+    "stable_visibility_p50_ms": 27.1327,
+    "stable_visibility_p95_ms": 82.385,
+    "stable_visibility_max_ms": 118.4878,
+    "oldest_missing_max_ms": 113.09,
+    "observer_max_gap_ms": 163.9623
+  },
+  "final": [
+    [
+      0,
+      384,
+      480,
+      480,
+      384
+    ],
+    [
+      1,
+      17,
+      443,
+      443,
+      17
+    ],
+    [
+      2,
+      17,
+      433,
+      433,
+      17
+    ],
+    [
+      3,
+      16,
+      464,
+      464,
+      16
+    ],
+    [
+      4,
+      13,
+      463,
+      463,
+      13
+    ],
+    [
+      5,
+      8,
+      417,
+      417,
+      8
+    ],
+    [
+      6,
+      10,
+      465,
+      465,
+      10
+    ],
+    [
+      7,
+      15,
+      458,
+      458,
+      15
+    ]
+  ],
+  "correctness": "All committed prefixes match event log; final totals converge"
+}
